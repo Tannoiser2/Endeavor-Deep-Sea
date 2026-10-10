@@ -1,0 +1,1410 @@
+{
+ "specialists": [
+  {
+   "id": "sonar_operator",
+   "tier": 1,
+   "count": 5,
+   "j": {
+    "name": "Operatore sonar",
+    "en": "Sonar Operator",
+    "gain": [
+     "coord"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "sonar"
+     ]
+    },
+    "image": "res://assets/specialists/sonar_operator_j.jpg"
+   },
+   "s": {
+    "name": "Ingegnere acustico",
+    "en": "Acoustics Engineer",
+    "gain": [
+     "coord"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "travel",
+      "sonar"
+     ]
+    },
+    "image": "res://assets/specialists/sonar_operator_s.jpg"
+   }
+  },
+  {
+   "id": "reef_diver",
+   "tier": 1,
+   "count": 5,
+   "j": {
+    "name": "Sub di barriera",
+    "en": "Reef Diver",
+    "gain": [
+     "rep"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "dive"
+     ]
+    },
+    "image": "res://assets/specialists/reef_diver_j.jpg"
+   },
+   "s": {
+    "name": "Fotografo subacqueo",
+    "en": "Underwater Photographer",
+    "gain": [
+     "rep"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "dive",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/reef_diver_s.jpg"
+   }
+  },
+  {
+   "id": "pilot",
+   "tier": 1,
+   "count": 5,
+   "j": {
+    "name": "Pilota",
+    "en": "Pilot",
+    "gain": [
+     "impact"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "travel"
+     ]
+    },
+    "image": "res://assets/specialists/pilot_j.jpg"
+   },
+   "s": {
+    "name": "Skipper",
+    "en": "Skipper",
+    "gain": [
+     "insp",
+     "coord"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "travel"
+     ]
+    },
+    "image": "res://assets/specialists/pilot_s.jpg"
+   }
+  },
+  {
+   "id": "marine_engineer",
+   "tier": 2,
+   "count": 4,
+   "j": {
+    "name": "Ingegnere navale",
+    "en": "Marine Engineer",
+    "gain": [
+     "ing",
+     "ing"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "image": "res://assets/specialists/marine_engineer_j.jpg"
+   },
+   "s": {
+    "name": "Architetto navale",
+    "en": "Naval Architect",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "travel",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/marine_engineer_s.jpg"
+   }
+  },
+  {
+   "id": "navigator",
+   "tier": 2,
+   "count": 4,
+   "j": {
+    "name": "Navigatore",
+    "en": "Navigator",
+    "gain": [
+     "insp"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "travel",
+      "sonar"
+     ]
+    },
+    "image": "res://assets/specialists/navigator_j.jpg"
+   },
+   "s": {
+    "name": "Idrografo",
+    "en": "Hydrographer",
+    "gain": [],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "sonar",
+      "dive"
+     ]
+    },
+    "image": "res://assets/specialists/navigator_s.jpg"
+   }
+  },
+  {
+   "id": "ecologist",
+   "tier": 2,
+   "count": 4,
+   "j": {
+    "name": "Ecologa",
+    "en": "Ecologist",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "travel",
+      "cons"
+     ]
+    },
+    "image": "res://assets/specialists/ecologist_j.jpg"
+   },
+   "s": {
+    "name": "Ecotossicologa",
+    "en": "Ecotoxicologist",
+    "gain": [
+     "coord",
+     "coord"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "dive",
+      "cons"
+     ]
+    },
+    "image": "res://assets/specialists/ecologist_s.jpg"
+   }
+  },
+  {
+   "id": "field_researcher",
+   "tier": 3,
+   "count": 3,
+   "j": {
+    "name": "Ricercatore sul campo",
+    "en": "Field Researcher",
+    "gain": [],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "sonar",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/field_researcher_j.jpg"
+   },
+   "s": {
+    "name": "Scienziato marino",
+    "en": "Marine Scientist",
+    "gain": [],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/field_researcher_s.jpg"
+   }
+  },
+  {
+   "id": "marine_biologist",
+   "tier": 3,
+   "count": 3,
+   "j": {
+    "name": "Biologo marino",
+    "en": "Marine Biologist",
+    "gain": [
+     "insp",
+     "insp"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "cons",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/marine_biologist_j.jpg"
+   },
+   "s": {
+    "name": "Acquacoltore",
+    "en": "Aquaculturist",
+    "gain": [],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "cons",
+      "cons"
+     ]
+    },
+    "image": "res://assets/specialists/marine_biologist_s.jpg"
+   }
+  },
+  {
+   "id": "rov_operator",
+   "tier": 3,
+   "count": 3,
+   "j": {
+    "name": "Operatrice ROV",
+    "en": "R.O.V. Operator",
+    "gain": [],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "dive"
+     ]
+    },
+    "image": "res://assets/specialists/rov_operator_j.jpg"
+   },
+   "s": {
+    "name": "Videografa degli abissi",
+    "en": "Deep-Sea Videographer",
+    "gain": [
+     "rep",
+     "rep"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "dive",
+      "cons"
+     ]
+    },
+    "image": "res://assets/specialists/rov_operator_s.jpg"
+   }
+  },
+  {
+   "id": "vessel_captain",
+   "tier": 4,
+   "count": 2,
+   "j": {
+    "name": "Capitano",
+    "en": "Vessel Captain",
+    "gain": [
+     "ing"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "travel"
+     ]
+    },
+    "image": "res://assets/specialists/vessel_captain_j.jpg"
+   },
+   "s": {
+    "name": "Capo spedizione",
+    "en": "Expedition Leader",
+    "gain": [
+     "ing"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "sonar"
+     ]
+    },
+    "image": "res://assets/specialists/vessel_captain_s.jpg"
+   }
+  },
+  {
+   "id": "deep_sea_diver",
+   "tier": 4,
+   "count": 2,
+   "j": {
+    "name": "Palombara",
+    "en": "Deep-Sea Diver",
+    "gain": [
+     "impact"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "dive",
+      "dive"
+     ]
+    },
+    "image": "res://assets/specialists/deep_sea_diver_j.jpg"
+   },
+   "s": {
+    "name": "Biologa degli abissi",
+    "en": "Deep-Sea Biologist",
+    "gain": [
+     "res",
+     "res"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "cons"
+     ]
+    },
+    "image": "res://assets/specialists/deep_sea_diver_s.jpg"
+   }
+  },
+  {
+   "id": "oceanographer",
+   "tier": 4,
+   "count": 2,
+   "j": {
+    "name": "Oceanografa",
+    "en": "Oceanographer",
+    "gain": [
+     "rep",
+     "insp",
+     "coord",
+     "ing"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "sonar",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/oceanographer_j.jpg"
+   },
+   "s": {
+    "name": "Ambasciatrice ambientale",
+    "en": "Environmental Ambassador",
+    "gain": [
+     "impact",
+     "impact"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "image": "res://assets/specialists/oceanographer_s.jpg"
+   }
+  },
+  {
+   "id": "adventurer",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Avventuriera",
+    "en": "Adventurer",
+    "gain": [
+     "insp",
+     "insp",
+     "insp"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "sonar",
+      "sonar"
+     ]
+    },
+    "image": "res://assets/specialists/adventurer_j.jpg"
+   },
+   "s": {
+    "name": "Avventuriera rinomata",
+    "en": "Renowned Adventurer",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "zones3",
+    "score_text": "1 ogni 3 zone dove hai un gettone o una Nave",
+    "image": "res://assets/specialists/adventurer_s.jpg"
+   }
+  },
+  {
+   "id": "biogeographer",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Biogeografa",
+    "en": "Biogeographer",
+    "gain": [
+     "ing"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "dive",
+      "cons"
+     ]
+    },
+    "image": "res://assets/specialists/biogeographer_j.jpg"
+   },
+   "s": {
+    "name": "Biogeografa rinomata",
+    "en": "Renowned Biogeographer",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "cons_zones",
+    "score_text": "1 per ogni zona dove hai un gettone Conservazione",
+    "image": "res://assets/specialists/biogeographer_s.jpg"
+   }
+  },
+  {
+   "id": "mentor",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Mentore",
+    "en": "Mentor",
+    "gain": [
+     "coord",
+     "coord"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "journal",
+      "promote"
+     ]
+    },
+    "image": "res://assets/specialists/mentor_j.jpg"
+   },
+   "s": {
+    "name": "Mentore rinomata",
+    "en": "Renowned Mentor",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "seniors",
+    "score_text": "1 per ogni altro tuo Specialista Senior",
+    "image": "res://assets/specialists/mentor_s.jpg"
+   }
+  },
+  {
+   "id": "fleet_coordinator",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Coordinatore di flotta",
+    "en": "Fleet Coordinator",
+    "gain": [
+     "ing"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "travel",
+      "travel"
+     ]
+    },
+    "image": "res://assets/specialists/fleet_coordinator_j.jpg"
+   },
+   "s": {
+    "name": "Coordinatore di flotta rinomato",
+    "en": "Renowned Fleet Coordinator",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "shared_links",
+    "score_text": "1 ogni 2 collegamenti completati che condividi con avversari",
+    "image": "res://assets/specialists/fleet_coordinator_s.jpg"
+   }
+  },
+  {
+   "id": "ocean_historian",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Storica dell'oceano",
+    "en": "Ocean Historian",
+    "gain": [
+     "coord"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "dive",
+      "dive",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/ocean_historian_j.jpg"
+   },
+   "s": {
+    "name": "Storica dell'oceano rinomata",
+    "en": "Renowned Ocean Historian",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "field_sets",
+    "score_text": "3 per ogni serie dei quattro simboli di Campo",
+    "image": "res://assets/specialists/ocean_historian_s.jpg"
+   }
+  },
+  {
+   "id": "robotics_engineer",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Ingegnere robotico",
+    "en": "Robotics Engineer",
+    "gain": [
+     "insp",
+     "insp"
+    ],
+    "acts": {
+     "mode": "one",
+     "list": [
+      "copy"
+     ]
+    },
+    "image": "res://assets/specialists/robotics_engineer_j.jpg"
+   },
+   "s": {
+    "name": "Ingegnere robotico rinomato",
+    "en": "Renowned Robotics Engineer",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "flat4",
+    "score_text": "4 punti",
+    "image": "res://assets/specialists/robotics_engineer_s.jpg"
+   }
+  },
+  {
+   "id": "ichthyologist",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Ittiologo",
+    "en": "Ichthyologist",
+    "gain": [
+     "insp"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "dive",
+      "cons",
+      "cons"
+     ]
+    },
+    "image": "res://assets/specialists/ichthyologist_j.jpg"
+   },
+   "s": {
+    "name": "Ittiologo rinomato",
+    "en": "Renowned Ichthyologist",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "cons_one_zone",
+    "score_text": "1 per ogni tuo gettone Conservazione in una sola zona",
+    "image": "res://assets/specialists/ichthyologist_s.jpg"
+   }
+  },
+  {
+   "id": "dive_team_leader",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Capo squadra sub",
+    "en": "Dive Team Leader",
+    "gain": [
+     "ing",
+     "ing",
+     "ing"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "travel",
+      "dive"
+     ]
+    },
+    "image": "res://assets/specialists/dive_team_leader_j.jpg"
+   },
+   "s": {
+    "name": "Capo squadra sub rinomata",
+    "en": "Renowned Dive Team Leader",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "empty_dives",
+    "score_text": "1 ogni 2 siti Immersione vuoti nell'oceano",
+    "image": "res://assets/specialists/dive_team_leader_s.jpg"
+   }
+  },
+  {
+   "id": "biotechnologist",
+   "tier": 5,
+   "count": 1,
+   "j": {
+    "name": "Biotecnologo",
+    "en": "Biotechnologist",
+    "gain": [
+     "res",
+     "res",
+     "res",
+     "res"
+    ],
+    "acts": {
+     "mode": "all",
+     "list": [
+      "cons",
+      "journal"
+     ]
+    },
+    "image": "res://assets/specialists/biotechnologist_j.jpg"
+   },
+   "s": {
+    "name": "Biotecnologo rinomato",
+    "en": "Renowned Biotechnologist",
+    "gain": [],
+    "acts": {
+     "mode": "one",
+     "list": []
+    },
+    "score": "journal_depths",
+    "score_text": "1 per ogni profondità dove hai un gettone Diario",
+    "image": "res://assets/specialists/biotechnologist_s.jpg"
+   }
+  }
+ ],
+ "leaders": {
+  "yellow": "res://assets/specialists/leader_yellow.jpg",
+  "purple": "res://assets/specialists/leader_purple.jpg",
+  "white": "res://assets/specialists/leader_white.jpg",
+  "red": "res://assets/specialists/leader_red.jpg"
+ },
+ "leader": {
+  "name": "Capo squadra",
+  "en": "Team Leader",
+  "gain": [],
+  "acts": {
+   "mode": "one",
+   "list": [
+    "travel",
+    "sonar",
+    "dive",
+    "cons",
+    "journal"
+   ]
+  }
+ },
+ "journals": [
+  {
+   "id": "j00",
+   "cost": 3,
+   "fields": [
+    "yellow"
+   ],
+   "you": [
+    "insp",
+    "impact",
+    "promote"
+   ],
+   "en": "Improving Working Environments for Marine Studies",
+   "image": "res://assets/journals/j00.jpg",
+   "others": [],
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "j01",
+   "cost": 4,
+   "fields": [
+    "yellow",
+    "green"
+   ],
+   "you": [
+    "rep",
+    "rep",
+    "promote"
+   ],
+   "slots": [
+    "cons_depth",
+    "cons_depth"
+   ],
+   "en": "Protecting Threatened Marine Habitats",
+   "image": "res://assets/journals/j01.jpg",
+   "others": [],
+   "points": 0
+  },
+  {
+   "id": "j02",
+   "cost": 2,
+   "fields": [
+    "yellow",
+    "brown"
+   ],
+   "you": [
+    "coord",
+    "ing",
+    "promote"
+   ],
+   "others": [
+    "coord"
+   ],
+   "en": "Advanced Sonar Communication Techniques",
+   "image": "res://assets/journals/j02.jpg",
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "j03",
+   "cost": 3,
+   "fields": [
+    "brown",
+    "green"
+   ],
+   "you": [
+    "rep",
+    "promote"
+   ],
+   "others": [
+    "res",
+    "res"
+   ],
+   "slots": [
+    "promote"
+   ],
+   "en": "Publication Guide for Undersea Research",
+   "image": "res://assets/journals/j03.jpg",
+   "points": 0
+  },
+  {
+   "id": "j04",
+   "cost": 2,
+   "fields": [
+    "brown",
+    "green"
+   ],
+   "you": [
+    "promote"
+   ],
+   "others": [
+    "insp"
+   ],
+   "slots": [
+    "travel1",
+    "travel1"
+   ],
+   "en": "The Rising Tide of Achievement",
+   "image": "res://assets/journals/j04.jpg",
+   "points": 0
+  },
+  {
+   "id": "j05",
+   "cost": 3,
+   "fields": [
+    "brown",
+    "green"
+   ],
+   "you": [
+    "insp",
+    "insp",
+    "promote"
+   ],
+   "others": [
+    "coord"
+   ],
+   "slots": [
+    "dive2"
+   ],
+   "en": "Enhancing Research Productivity",
+   "image": "res://assets/journals/j05.jpg",
+   "points": 0
+  },
+  {
+   "id": "j06",
+   "cost": 3,
+   "fields": [
+    "brown",
+    "green"
+   ],
+   "you": [
+    "impact",
+    "promote"
+   ],
+   "others": [
+    "res",
+    "res"
+   ],
+   "slots": [
+    "cons_depth",
+    "cons_depth"
+   ],
+   "en": "The Interlinked Ecosystem",
+   "image": "res://assets/journals/j06.jpg",
+   "points": 0
+  },
+  {
+   "id": "j07",
+   "cost": 2,
+   "fields": [
+    "blue",
+    "yellow"
+   ],
+   "points": 2,
+   "you": [
+    "ing",
+    "ing"
+   ],
+   "en": "Advanced Pressure-Venting Technology",
+   "image": "res://assets/journals/j07.jpg",
+   "others": [],
+   "slots": []
+  },
+  {
+   "id": "j08",
+   "cost": 3,
+   "fields": [
+    "blue",
+    "yellow"
+   ],
+   "points": 2,
+   "you": [
+    "coord",
+    "promote"
+   ],
+   "en": "AI models for Deep-Sea Research",
+   "image": "res://assets/journals/j08.jpg",
+   "others": [],
+   "slots": []
+  },
+  {
+   "id": "j09",
+   "cost": 3,
+   "fields": [
+    "blue",
+    "yellow"
+   ],
+   "points": 2,
+   "you": [
+    "rep",
+    "promote"
+   ],
+   "en": "Publicity's Role in Scientific Advancement",
+   "image": "res://assets/journals/j09.jpg",
+   "others": [],
+   "slots": []
+  },
+  {
+   "id": "j10",
+   "cost": 3,
+   "fields": [
+    "yellow",
+    "green"
+   ],
+   "you": [
+    "coord",
+    "promote"
+   ],
+   "slots": [
+    "dive2"
+   ],
+   "en": "Understanding Life in the Deepest Sea",
+   "image": "res://assets/journals/j10.jpg",
+   "others": [],
+   "points": 0
+  },
+  {
+   "id": "j11",
+   "cost": 3,
+   "fields": [
+    "blue",
+    "green"
+   ],
+   "points": 3,
+   "slots": [
+    "discover35"
+   ],
+   "en": "Deepwater Satellite Imaging",
+   "image": "res://assets/journals/j11.jpg",
+   "you": [],
+   "others": []
+  },
+  {
+   "id": "j12",
+   "cost": 4,
+   "fields": [
+    "blue",
+    "green"
+   ],
+   "points": 2,
+   "slots": [
+    "promote",
+    "promote"
+   ],
+   "en": "The Nautical Journals",
+   "image": "res://assets/journals/j12.jpg",
+   "you": [],
+   "others": []
+  },
+  {
+   "id": "j13",
+   "cost": 4,
+   "fields": [
+    "blue",
+    "brown"
+   ],
+   "points": 2,
+   "you": [
+    "rep",
+    "insp",
+    "coord"
+   ],
+   "others": [
+    "disc"
+   ],
+   "en": "Volunteer Model for Underwater Conservation",
+   "image": "res://assets/journals/j13.jpg",
+   "slots": []
+  },
+  {
+   "id": "j14",
+   "cost": 2,
+   "fields": [
+    "blue"
+   ],
+   "points": 4,
+   "en": "Feasibility Report: Aquadome Permanent Lab",
+   "image": "res://assets/journals/j14.jpg",
+   "you": [],
+   "others": [],
+   "slots": []
+  },
+  {
+   "id": "j15",
+   "cost": 0,
+   "fields": [
+    "blue",
+    "brown"
+   ],
+   "points": 3,
+   "others": [
+    "ing"
+   ],
+   "en": "Fluorescence-Detecting Optical Systems",
+   "image": "res://assets/journals/j15.jpg",
+   "you": [],
+   "slots": []
+  },
+  {
+   "id": "j16",
+   "cost": 0,
+   "fields": [
+    "blue"
+   ],
+   "points": 2,
+   "en": "Holographic Ocean Floor Visualization",
+   "image": "res://assets/journals/j16.jpg",
+   "you": [],
+   "others": [],
+   "slots": []
+  },
+  {
+   "id": "j17",
+   "cost": 4,
+   "fields": [
+    "blue",
+    "yellow"
+   ],
+   "points": 2,
+   "you": [
+    "impact",
+    "impact",
+    "ing"
+   ],
+   "en": "Autonomous Microplastic Reclamation Filters",
+   "image": "res://assets/journals/j17.jpg",
+   "others": [],
+   "slots": []
+  },
+  {
+   "id": "j18",
+   "cost": 2,
+   "fields": [
+    "brown"
+   ],
+   "you": [
+    "coord",
+    "coord",
+    "promote"
+   ],
+   "others": [
+    "coord"
+   ],
+   "en": "Networking for Underwater Communication",
+   "image": "res://assets/journals/j18.jpg",
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "j19",
+   "cost": 2,
+   "fields": [
+    "brown"
+   ],
+   "you": [
+    "insp",
+    "insp",
+    "promote"
+   ],
+   "others": [
+    "insp"
+   ],
+   "en": "Benefits of Inter-Team Data-Sharing",
+   "image": "res://assets/journals/j19.jpg",
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "j20",
+   "cost": 3,
+   "fields": [
+    "green"
+   ],
+   "you": [
+    "promote"
+   ],
+   "slots": [
+    "discover35"
+   ],
+   "en": "Review of Current Oceanography Research",
+   "image": "res://assets/journals/j20.jpg",
+   "others": [],
+   "points": 0
+  },
+  {
+   "id": "j21",
+   "cost": 1,
+   "fields": [
+    "green"
+   ],
+   "you": [
+    "promote"
+   ],
+   "slots": [
+    "travel1"
+   ],
+   "en": "Safe Movement Procedures",
+   "image": "res://assets/journals/j21.jpg",
+   "others": [],
+   "points": 0
+  },
+  {
+   "id": "j22",
+   "cost": 4,
+   "fields": [
+    "yellow",
+    "brown"
+   ],
+   "you": [
+    "rep",
+    "rep",
+    "impact",
+    "promote"
+   ],
+   "others": [
+    "low"
+   ],
+   "en": "Documentation of New Life",
+   "image": "res://assets/journals/j22.jpg",
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "j23",
+   "cost": 3,
+   "fields": [
+    "yellow"
+   ],
+   "you": [
+    "ing",
+    "impact",
+    "promote"
+   ],
+   "en": "Social Structures of Marine Mammals",
+   "image": "res://assets/journals/j23.jpg",
+   "others": [],
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "a00",
+   "anchor": true,
+   "cost": 2,
+   "fields": [
+    "brown"
+   ],
+   "you": [
+    "ing",
+    "ing",
+    "promote"
+   ],
+   "others": [
+    "ing"
+   ],
+   "en": "Organic Casing for Deep-Sea Exploration",
+   "image": "res://assets/journals/a00.jpg",
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "a01",
+   "anchor": true,
+   "cost": 0,
+   "fields": [
+    "blue",
+    "brown"
+   ],
+   "points": 1,
+   "you": [
+    "promote"
+   ],
+   "others": [
+    "ing"
+   ],
+   "en": "Uncharted Deep-Sea Organic Life",
+   "image": "res://assets/journals/a01.jpg",
+   "slots": []
+  },
+  {
+   "id": "a02",
+   "anchor": true,
+   "cost": 2,
+   "fields": [
+    "brown"
+   ],
+   "you": [
+    "rep",
+    "rep",
+    "promote"
+   ],
+   "others": [
+    "rep"
+   ],
+   "en": "Optimizing Multi-Team Discovery Announcements",
+   "image": "res://assets/journals/a02.jpg",
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "a03",
+   "anchor": true,
+   "cost": 3,
+   "fields": [
+    "yellow",
+    "brown"
+   ],
+   "you": [
+    "insp",
+    "insp",
+    "promote"
+   ],
+   "others": [
+    "disc"
+   ],
+   "en": "Effective Communication of Ecosystemic Risk",
+   "image": "res://assets/journals/a03.jpg",
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "a04",
+   "anchor": true,
+   "cost": 1,
+   "fields": [
+    "green"
+   ],
+   "you": [
+    "promote"
+   ],
+   "slots": [
+    "cons_depth"
+   ],
+   "en": "Extending Conservation Area of Effectiveness",
+   "image": "res://assets/journals/a04.jpg",
+   "others": [],
+   "points": 0
+  },
+  {
+   "id": "a05",
+   "anchor": true,
+   "cost": 3,
+   "fields": [
+    "yellow",
+    "green"
+   ],
+   "you": [
+    "coord",
+    "promote"
+   ],
+   "slots": [
+    "travel1"
+   ],
+   "en": "Mobile Techniques for Underwater Exploration",
+   "image": "res://assets/journals/a05.jpg",
+   "others": [],
+   "points": 0
+  },
+  {
+   "id": "a06",
+   "anchor": true,
+   "cost": 2,
+   "fields": [
+    "yellow"
+   ],
+   "you": [
+    "coord",
+    "promote"
+   ],
+   "en": "Understanding Oceanic Shifts",
+   "image": "res://assets/journals/a06.jpg",
+   "others": [],
+   "slots": [],
+   "points": 0
+  },
+  {
+   "id": "a07",
+   "anchor": true,
+   "cost": 2,
+   "fields": [
+    "yellow"
+   ],
+   "you": [
+    "rep",
+    "promote"
+   ],
+   "en": "Reef Photography with Swarm Camera Systems",
+   "image": "res://assets/journals/a07.jpg",
+   "others": [],
+   "slots": [],
+   "points": 0
+  }
+ ],
+ "dive": [
+  {
+   "id": "promote",
+   "res": 4,
+   "fx": "promote",
+   "n": 2,
+   "image": "res://assets/dive/promote.jpg"
+  },
+  {
+   "id": "impact",
+   "res": 3,
+   "fx": "impact",
+   "n": 4,
+   "image": "res://assets/dive/impact.jpg"
+  },
+  {
+   "id": "sonar",
+   "res": 3,
+   "fx": "sonar",
+   "n": 2,
+   "image": "res://assets/dive/sonar.jpg"
+  },
+  {
+   "id": "any",
+   "res": 4,
+   "fx": "any",
+   "n": 4,
+   "image": "res://assets/dive/any.jpg"
+  },
+  {
+   "id": "dive",
+   "res": 3,
+   "fx": "dive",
+   "n": 2,
+   "image": "res://assets/dive/dive.jpg"
+  },
+  {
+   "id": "travel",
+   "res": 3,
+   "fx": "travel",
+   "n": 4,
+   "image": "res://assets/dive/travel.jpg"
+  },
+  {
+   "id": "journal",
+   "res": 3,
+   "fx": "journal",
+   "n": 2,
+   "image": "res://assets/dive/journal.jpg"
+  },
+  {
+   "id": "disc",
+   "res": 3,
+   "fx": "disc",
+   "n": 4,
+   "image": "res://assets/dive/disc.jpg"
+  },
+  {
+   "id": "plain",
+   "res": 4,
+   "fx": "",
+   "n": 6,
+   "image": "res://assets/dive/plain.jpg"
+  },
+  {
+   "id": "cons",
+   "res": 3,
+   "fx": "cons1",
+   "n": 2,
+   "image": "res://assets/dive/cons.jpg"
+  },
+  {
+   "id": "trade",
+   "res": 3,
+   "fx": "trade",
+   "n": 2,
+   "image": "res://assets/dive/trade.jpg"
+  },
+  {
+   "id": "low",
+   "res": 3,
+   "fx": "low",
+   "n": 2,
+   "image": "res://assets/dive/low.jpg"
+  }
+ ]
+}

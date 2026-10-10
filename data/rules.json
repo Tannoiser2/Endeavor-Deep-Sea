@@ -1,0 +1,177 @@
+{
+ "players": {
+  "yellow": {
+   "name": "Giallo",
+   "color": "#f2c418",
+   "mat": "res://assets/mats/yellow.jpg",
+   "disc": "res://assets/tokens/disc_yellow.png",
+   "vessel": "res://assets/tokens/vessel_yellow.png",
+   "impact": "res://assets/tokens/impact_yellow.png",
+   "leader": "res://assets/specialists/leader_yellow.jpg"
+  },
+  "purple": {
+   "name": "Viola",
+   "color": "#8a2db0",
+   "mat": "res://assets/mats/purple.jpg",
+   "disc": "res://assets/tokens/disc_purple.png",
+   "vessel": "res://assets/tokens/vessel_purple.png",
+   "impact": "res://assets/tokens/impact_purple.png",
+   "leader": "res://assets/specialists/leader_purple.jpg"
+  },
+  "white": {
+   "name": "Bianco",
+   "color": "#e9e9e9",
+   "mat": "res://assets/mats/white.jpg",
+   "disc": "res://assets/tokens/disc_white.png",
+   "vessel": "res://assets/tokens/vessel_white.png",
+   "impact": "res://assets/tokens/impact_white.png",
+   "leader": "res://assets/specialists/leader_white.jpg"
+  },
+  "red": {
+   "name": "Rosso",
+   "color": "#e3262e",
+   "mat": "res://assets/mats/red.jpg",
+   "disc": "res://assets/tokens/disc_red.png",
+   "vessel": "res://assets/tokens/vessel_red.png",
+   "impact": "res://assets/tokens/impact_red.png",
+   "leader": "res://assets/specialists/leader_red.jpg"
+  }
+ },
+ "mat": {
+  "size": [
+   2657,
+   1713
+  ],
+  "track_y": {
+   "rep": 218,
+   "insp": 508,
+   "coord": 800,
+   "ing": 1091
+  },
+  "track_x": [
+   524,
+   660,
+   825,
+   990,
+   1155,
+   1316,
+   1478,
+   1643,
+   1805,
+   1966,
+   2130,
+   2293,
+   2450
+  ],
+  "research": [
+   [
+    1773,
+    1418
+   ],
+   [
+    1928,
+    1418
+   ],
+   [
+    2083,
+    1418
+   ],
+   [
+    2236,
+    1418
+   ],
+   [
+    2388,
+    1418
+   ],
+   [
+    2541,
+    1418
+   ],
+   [
+    1620,
+    1601
+   ],
+   [
+    1773,
+    1601
+   ],
+   [
+    1928,
+    1601
+   ],
+   [
+    2083,
+    1601
+   ],
+   [
+    2236,
+    1601
+   ],
+   [
+    2388,
+    1601
+   ],
+   [
+    2541,
+    1601
+   ]
+  ],
+  "staging": [
+   35,
+   1318,
+   1065,
+   1676
+  ],
+  "dive_slot": [
+   1290,
+   1496
+  ]
+ },
+ "rules": {
+  "rounds": 6,
+  "level": [
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5
+  ],
+  "bracket": [
+   0,
+   0,
+   2,
+   2,
+   4,
+   4,
+   4,
+   7,
+   7,
+   7,
+   10,
+   10,
+   10
+  ],
+  "track_max": 12,
+  "impact_at": 10,
+  "research_max": 12,
+  "vessel_at": [
+   2,
+   7
+  ],
+  "vessels": 3,
+  "discs": 30,
+  "dive_keep": 1,
+  "tier_pockets": 3,
+  "t5_per_pocket": 3,
+  "display": 4
+ }
+}

@@ -1,0 +1,7898 @@
+{
+ "1": {
+  "name": "Il richiamo dell'oceano",
+  "name_en": "The Call of the Ocean",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "volcanic_island",
+    1,
+    1
+   ],
+   [
+    "sea_star",
+    2,
+    1
+   ],
+   [
+    "random",
+    3,
+    1
+   ],
+   [
+    "looking_glass",
+    2,
+    2
+   ]
+  ],
+  "launch": "sea_star",
+  "hexes": [
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.0906,
+     0.3655
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     7
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     1,
+     0
+    ],
+    "pos": [
+     0.1565,
+     0.3655
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     2,
+     7,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     0
+    ],
+    "pos": [
+     0.2223,
+     0.3655
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     1,
+     3,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     0
+    ],
+    "pos": [
+     0.2882,
+     0.3655
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     2,
+     4
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     0
+    ],
+    "pos": [
+     0.354,
+     0.3655
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     3,
+     5
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     0
+    ],
+    "pos": [
+     0.4199,
+     0.3655
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     4,
+     6
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     0
+    ],
+    "pos": [
+     0.4857,
+     0.3655
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     5,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.1235,
+     0.451
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     1,
+     8,
+     10,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.1894,
+     0.451
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     7,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     1
+    ],
+    "pos": [
+     0.5187,
+     0.451
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     6,
+     12,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     2
+    ],
+    "pos": [
+     0.0906,
+     0.5366
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     7,
+     11
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     0,
+     2
+    ],
+    "pos": [
+     0.1565,
+     0.5366
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     7,
+     8,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     2
+    ],
+    "pos": [
+     0.4857,
+     0.5366
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     9,
+     13,
+     16,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     2
+    ],
+    "pos": [
+     0.5516,
+     0.5366
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     9,
+     12,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     3
+    ],
+    "pos": [
+     0.3211,
+     0.6221
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "adj": [
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     3
+    ],
+    "pos": [
+     0.387,
+     0.6221
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     14,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     3
+    ],
+    "pos": [
+     0.4528,
+     0.6221
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     12,
+     15,
+     17,
+     20
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     3
+    ],
+    "pos": [
+     0.5187,
+     0.6221
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     12,
+     13,
+     16,
+     20,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     4
+    ],
+    "pos": [
+     0.0906,
+     0.7076
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     19,
+     22
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     -1,
+     4
+    ],
+    "pos": [
+     0.1565,
+     0.7076
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     18,
+     22,
+     23
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     4
+    ],
+    "pos": [
+     0.4857,
+     0.7076
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     16,
+     17,
+     21,
+     24
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     4
+    ],
+    "pos": [
+     0.5516,
+     0.7076
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     17,
+     20,
+     24
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     5
+    ],
+    "pos": [
+     0.1235,
+     0.7932
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     18,
+     19,
+     23,
+     25,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     5
+    ],
+    "pos": [
+     0.1894,
+     0.7932
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     19,
+     22,
+     26,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     5
+    ],
+    "pos": [
+     0.5187,
+     0.7932
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     20,
+     21,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     6
+    ],
+    "pos": [
+     0.0906,
+     0.8787
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     22,
+     26
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     -2,
+     6
+    ],
+    "pos": [
+     0.1565,
+     0.8787
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     22,
+     23,
+     25,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     6
+    ],
+    "pos": [
+     0.2223,
+     0.8787
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     23,
+     26,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     6
+    ],
+    "pos": [
+     0.2882,
+     0.8787
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     27,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     6
+    ],
+    "pos": [
+     0.354,
+     0.8787
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     28,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     6
+    ],
+    "pos": [
+     0.4199,
+     0.8787
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     29,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     6
+    ],
+    "pos": [
+     0.4857,
+     0.8787
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     24,
+     30
+    ],
+    "entry": false
+   }
+  ],
+  "goals": [
+   {
+    "kind": "discs",
+    "site": "sonar",
+    "lead": [
+     5,
+     3
+    ],
+    "text": "1 per gettone Sonar nell'oceano"
+   },
+   {
+    "kind": "discs",
+    "site": "journal",
+    "lead": [
+     3,
+     1
+    ],
+    "text": "1 per gettone Diario nell'oceano"
+   },
+   {
+    "kind": "discs",
+    "site": "cons",
+    "lead": [
+     7,
+     4
+    ],
+    "text": "1 per gettone Conservazione nell'oceano"
+   }
+  ],
+  "hex_r": 0.0329,
+  "image": "res://assets/missions/m1.jpg"
+ },
+ "2": {
+  "name": "Mappe e carte nautiche",
+  "name_en": "Maps and Charts",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "sea_star",
+    0,
+    1
+   ],
+   [
+    "calm_seas",
+    1,
+    1
+   ],
+   [
+    "remote_anchorage",
+    2,
+    1
+   ],
+   [
+    "looking_glass",
+    0,
+    2
+   ]
+  ],
+  "launch": "sea_star",
+  "hexes": [
+   {
+    "ij": [
+     -1,
+     1
+    ],
+    "pos": [
+     0.1477,
+     0.3678
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     8
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.0906,
+     0.4172
+    ],
+    "r": "SS",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     2,
+     3
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.1477,
+     0.4666
+    ],
+    "r": "SS",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     1,
+     3,
+     8,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     0
+    ],
+    "pos": [
+     0.0906,
+     0.516
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     4
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     2,
+     0
+    ],
+    "pos": [
+     0.0906,
+     0.6148
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     3,
+     5
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     0
+    ],
+    "pos": [
+     0.0906,
+     0.7135
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     4,
+     6,
+     7
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     0
+    ],
+    "pos": [
+     0.0906,
+     0.8123
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     5,
+     7
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     1
+    ],
+    "pos": [
+     0.1477,
+     0.7629
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     5,
+     6,
+     11,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     2
+    ],
+    "pos": [
+     0.2047,
+     0.4172
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     0,
+     2,
+     9,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     2
+    ],
+    "pos": [
+     0.2047,
+     0.516
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     2,
+     8,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     2
+    ],
+    "pos": [
+     0.2047,
+     0.6148
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     9,
+     11,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     2
+    ],
+    "pos": [
+     0.2047,
+     0.7135
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     7,
+     10,
+     12,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     2
+    ],
+    "pos": [
+     0.2047,
+     0.8123
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     7,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     3
+    ],
+    "pos": [
+     0.2617,
+     0.3678
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     8,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     3
+    ],
+    "pos": [
+     0.2617,
+     0.6642
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     10,
+     11,
+     17,
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     4
+    ],
+    "pos": [
+     0.3187,
+     0.4172
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     13,
+     16,
+     20
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     4
+    ],
+    "pos": [
+     0.3187,
+     0.516
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     15,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     4
+    ],
+    "pos": [
+     0.3187,
+     0.6148
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     14,
+     16,
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     4
+    ],
+    "pos": [
+     0.3187,
+     0.7135
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     14,
+     17,
+     19,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     4
+    ],
+    "pos": [
+     0.3187,
+     0.8123
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     18,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     5
+    ],
+    "pos": [
+     0.3758,
+     0.3678
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     15,
+     22
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     5
+    ],
+    "pos": [
+     0.3758,
+     0.7629
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     18,
+     19,
+     25,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     6
+    ],
+    "pos": [
+     0.4328,
+     0.4172
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     20,
+     23,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     6
+    ],
+    "pos": [
+     0.4328,
+     0.516
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     22,
+     24,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     6
+    ],
+    "pos": [
+     0.4328,
+     0.6148
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     23,
+     25,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     6
+    ],
+    "pos": [
+     0.4328,
+     0.7135
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     21,
+     24,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     6
+    ],
+    "pos": [
+     0.4328,
+     0.8123
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     21,
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -4,
+     7
+    ],
+    "pos": [
+     0.4898,
+     0.3678
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     22,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     7
+    ],
+    "pos": [
+     0.4898,
+     0.5654
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     23,
+     24,
+     30,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -4,
+     8
+    ],
+    "pos": [
+     0.5469,
+     0.4172
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     27,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     8
+    ],
+    "pos": [
+     0.5469,
+     0.516
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     28,
+     29,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     8
+    ],
+    "pos": [
+     0.5469,
+     0.6148
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     28,
+     30,
+     32
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     8
+    ],
+    "pos": [
+     0.5469,
+     0.7135
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     31,
+     33
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     8
+    ],
+    "pos": [
+     0.5469,
+     0.8123
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "adj": [
+     32
+    ],
+    "entry": false
+   }
+  ],
+  "goals": [
+   {
+    "kind": "discs",
+    "site": "sonar",
+    "cols": [
+     1,
+     2
+    ],
+    "lead": [
+     4,
+     2
+    ],
+    "text": "1 per gettone Sonar nelle colonne B e C"
+   },
+   {
+    "kind": "discs_vessels",
+    "cols": [
+     3,
+     4
+    ],
+    "lead": [
+     7,
+     4
+    ],
+    "text": "1 per gettone/Nave nelle colonne D ed E"
+   },
+   {
+    "kind": "zones_with_disc",
+    "depths": [
+     2,
+     3,
+     4
+    ],
+    "lead": [
+     2,
+     1
+    ],
+    "text": "1 per zona a profondità 2/3/4 con almeno un tuo gettone"
+   }
+  ],
+  "hex_r": 0.0329,
+  "image": "res://assets/missions/m2.jpg"
+ },
+ "3": {
+  "name": "Il diario dell'oceano",
+  "name_en": "The Oceanic Journal",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "sea_star",
+    2,
+    1
+   ],
+   [
+    "random",
+    3,
+    1
+   ],
+   [
+    "looking_glass",
+    2,
+    2
+   ],
+   [
+    "carbonate_spires",
+    2,
+    3
+   ]
+  ],
+  "launch": "any_depth1",
+  "start_hex": [
+   0.3901,
+   0.6367
+  ],
+  "hexes": [
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.0938,
+     0.3801
+    ],
+    "r": "F:yellow",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     1,
+     6
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     0
+    ],
+    "pos": [
+     0.1596,
+     0.3801
+    ],
+    "r": "F:green",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     0,
+     2,
+     6,
+     7
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     0
+    ],
+    "pos": [
+     0.2255,
+     0.3801
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     1,
+     3,
+     7
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     0
+    ],
+    "pos": [
+     0.2913,
+     0.3801
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     2,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     0
+    ],
+    "pos": [
+     0.4889,
+     0.3801
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     5,
+     10,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     0
+    ],
+    "pos": [
+     0.5547,
+     0.3801
+    ],
+    "r": "P",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     4,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.1267,
+     0.4656
+    ],
+    "r": "F:green",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     0,
+     1,
+     7,
+     12,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.1925,
+     0.4656
+    ],
+    "r": "F:brown",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     6,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     1
+    ],
+    "pos": [
+     0.3242,
+     0.4656
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     3,
+     9,
+     14,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     1
+    ],
+    "pos": [
+     0.3901,
+     0.4656
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     8,
+     10,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     1
+    ],
+    "pos": [
+     0.4559,
+     0.4656
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     4,
+     9,
+     11,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     1
+    ],
+    "pos": [
+     0.5218,
+     0.4656
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     4,
+     5,
+     10,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     2
+    ],
+    "pos": [
+     0.0938,
+     0.5511
+    ],
+    "r": "F:blue",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     6,
+     13,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     2
+    ],
+    "pos": [
+     0.1596,
+     0.5511
+    ],
+    "r": "F:yellow",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     6,
+     7,
+     12,
+     17,
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     2
+    ],
+    "pos": [
+     0.2913,
+     0.5511
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     8,
+     15,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     2
+    ],
+    "pos": [
+     0.3572,
+     0.5511
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     8,
+     9,
+     14
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     5,
+     2
+    ],
+    "pos": [
+     0.4889,
+     0.5511
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     10,
+     11,
+     20,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     3
+    ],
+    "pos": [
+     0.1267,
+     0.6367
+    ],
+    "r": "F:brown",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     12,
+     13,
+     18,
+     22
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     3
+    ],
+    "pos": [
+     0.1925,
+     0.6367
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     13,
+     17,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     3
+    ],
+    "pos": [
+     0.2584,
+     0.6367
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     14,
+     18,
+     23
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     3
+    ],
+    "pos": [
+     0.4559,
+     0.6367
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     16,
+     21,
+     25
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     5,
+     3
+    ],
+    "pos": [
+     0.5218,
+     0.6367
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     16,
+     20,
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     4
+    ],
+    "pos": [
+     0.0938,
+     0.7222
+    ],
+    "r": "F:blue",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     4
+    ],
+    "pos": [
+     0.2913,
+     0.7222
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     19,
+     24,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     4
+    ],
+    "pos": [
+     0.3572,
+     0.7222
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     23,
+     26,
+     27
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     4,
+     4
+    ],
+    "pos": [
+     0.4889,
+     0.7222
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     20,
+     21,
+     28,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     5
+    ],
+    "pos": [
+     0.3242,
+     0.8078
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     23,
+     24,
+     27,
+     33,
+     34
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     5
+    ],
+    "pos": [
+     0.3901,
+     0.8078
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     24,
+     26,
+     28,
+     34,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     5
+    ],
+    "pos": [
+     0.4559,
+     0.8078
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     25,
+     27,
+     29,
+     35,
+     36
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     5
+    ],
+    "pos": [
+     0.5218,
+     0.8078
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     25,
+     28,
+     30,
+     36,
+     37
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     5
+    ],
+    "pos": [
+     0.5876,
+     0.8078
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     29,
+     37,
+     38
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     6
+    ],
+    "pos": [
+     0.1596,
+     0.8933
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "adj": [
+     32
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     6
+    ],
+    "pos": [
+     0.2255,
+     0.8933
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     31,
+     33
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     6
+    ],
+    "pos": [
+     0.2913,
+     0.8933
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     26,
+     32,
+     34
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     6
+    ],
+    "pos": [
+     0.3572,
+     0.8933
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     26,
+     27,
+     33,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     6
+    ],
+    "pos": [
+     0.423,
+     0.8933
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     27,
+     28,
+     34,
+     36
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     6
+    ],
+    "pos": [
+     0.4889,
+     0.8933
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     28,
+     29,
+     35,
+     37
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     6
+    ],
+    "pos": [
+     0.5547,
+     0.8933
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     29,
+     30,
+     36,
+     38
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     6
+    ],
+    "pos": [
+     0.6206,
+     0.8933
+    ],
+    "r": "P",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     30,
+     37
+    ],
+    "entry": false
+   }
+  ],
+  "rule": "Quando ottieni una Nave puoi scegliere qualsiasi zona di profondità 1 come zona di partenza. I simboli di Campo sul tabellone Impatto non danno ricompense immediate ma contano come tuoi.",
+  "goals": [
+   {
+    "kind": "discs",
+    "site": "sonar",
+    "depths": [
+     1,
+     2
+    ],
+    "lead": [
+     6,
+     3
+    ],
+    "text": "1 per gettone Sonar a profondità 1/2"
+   },
+   {
+    "kind": "journal_vessels",
+    "depths": [
+     3,
+     4,
+     5
+    ],
+    "lead": [
+     4,
+     2
+    ],
+    "text": "1 per gettone Diario/Nave a profondità 3/4/5"
+   },
+   {
+    "kind": "fields",
+    "most": 2,
+    "text": "1 per simbolo di Campo del tuo tipo più numeroso; 2 a chi ne ha di più per ogni tipo"
+   }
+  ],
+  "hex_r": 0.0329,
+  "image": "res://assets/missions/m3.jpg"
+ },
+ "4": {
+  "name": "Meglio di come l'avete trovato",
+  "name_en": "Better Than You Found It",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "random",
+    1,
+    1
+   ],
+   [
+    "sea_star",
+    2,
+    1
+   ],
+   [
+    "dying_reef",
+    3,
+    1
+   ],
+   [
+    "looking_glass",
+    2,
+    2
+   ]
+  ],
+  "launch": "sea_star",
+  "hexes": [
+   {
+    "ij": [
+     -1,
+     -2
+    ],
+    "pos": [
+     0.1558,
+     0.3011
+    ],
+    "r": "I",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     3,
+     4
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     -2
+    ],
+    "pos": [
+     0.3496,
+     0.3435
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     2,
+     6,
+     7
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     -2
+    ],
+    "pos": [
+     0.4142,
+     0.3576
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     1,
+     7,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     -1
+    ],
+    "pos": [
+     0.1154,
+     0.378
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     0,
+     4,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     -1
+    ],
+    "pos": [
+     0.18,
+     0.3921
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     0,
+     3,
+     5,
+     9,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     -1
+    ],
+    "pos": [
+     0.2446,
+     0.4062
+    ],
+    "r": "C",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     4,
+     6,
+     10,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     -1
+    ],
+    "pos": [
+     0.3092,
+     0.4203
+    ],
+    "r": "C",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     1,
+     5,
+     7,
+     11,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     -1
+    ],
+    "pos": [
+     0.3738,
+     0.4344
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     6,
+     8,
+     12,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     -1
+    ],
+    "pos": [
+     0.4384,
+     0.4485
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     2,
+     7,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     0
+    ],
+    "pos": [
+     0.1395,
+     0.469
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     3,
+     4,
+     10,
+     14,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     0
+    ],
+    "pos": [
+     0.2041,
+     0.4831
+    ],
+    "r": "SS",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     4,
+     5,
+     9,
+     11,
+     15,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.2687,
+     0.4972
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     5,
+     6,
+     10,
+     12,
+     16,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     0
+    ],
+    "pos": [
+     0.3333,
+     0.5113
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     6,
+     7,
+     11,
+     13,
+     17,
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     0
+    ],
+    "pos": [
+     0.3979,
+     0.5254
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     7,
+     8,
+     12,
+     18,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     1
+    ],
+    "pos": [
+     0.0991,
+     0.5458
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     9,
+     15,
+     22
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     -2,
+     1
+    ],
+    "pos": [
+     0.1637,
+     0.5599
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     9,
+     10,
+     14,
+     16,
+     22,
+     23
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     1
+    ],
+    "pos": [
+     0.2283,
+     0.574
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     10,
+     11,
+     15,
+     17,
+     23,
+     24
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.2929,
+     0.5881
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     11,
+     12,
+     16,
+     18,
+     24,
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.3575,
+     0.6023
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     12,
+     13,
+     17,
+     19,
+     25,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     1
+    ],
+    "pos": [
+     0.4221,
+     0.6164
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     13,
+     18,
+     20,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     1
+    ],
+    "pos": [
+     0.4867,
+     0.6305
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     19,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     1
+    ],
+    "pos": [
+     0.5513,
+     0.6446
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "adj": [
+     20
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     2
+    ],
+    "pos": [
+     0.1232,
+     0.6368
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     14,
+     15,
+     23,
+     27,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     2
+    ],
+    "pos": [
+     0.1878,
+     0.6509
+    ],
+    "r": "SS",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     15,
+     16,
+     22,
+     24,
+     28,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     2
+    ],
+    "pos": [
+     0.2524,
+     0.665
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     16,
+     17,
+     23,
+     25,
+     29,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     2
+    ],
+    "pos": [
+     0.317,
+     0.6791
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     17,
+     18,
+     24,
+     26,
+     30,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     2
+    ],
+    "pos": [
+     0.3816,
+     0.6932
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     18,
+     19,
+     25,
+     31,
+     32
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -4,
+     3
+    ],
+    "pos": [
+     0.0828,
+     0.7136
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     22,
+     28,
+     33
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     3
+    ],
+    "pos": [
+     0.1474,
+     0.7278
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     22,
+     23,
+     27,
+     29,
+     33
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     3
+    ],
+    "pos": [
+     0.212,
+     0.7419
+    ],
+    "r": "C",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     23,
+     24,
+     28,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     3
+    ],
+    "pos": [
+     0.2766,
+     0.756
+    ],
+    "r": "C",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     24,
+     25,
+     29,
+     31,
+     34
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     3
+    ],
+    "pos": [
+     0.3412,
+     0.7701
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     25,
+     26,
+     30,
+     32,
+     34,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     3
+    ],
+    "pos": [
+     0.4058,
+     0.7842
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     26,
+     31,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -4,
+     4
+    ],
+    "pos": [
+     0.107,
+     0.8046
+    ],
+    "r": "I",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     27,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     4
+    ],
+    "pos": [
+     0.3007,
+     0.8469
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     30,
+     31,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     4
+    ],
+    "pos": [
+     0.3653,
+     0.8611
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "adj": [
+     31,
+     32,
+     34
+    ],
+    "entry": false
+   }
+  ],
+  "special_hex": {
+   "px": [
+    2030,
+    1760
+   ],
+   "pts": 3,
+   "kind": "cons_zone"
+  },
+  "rule": "Una volta per zona, un Impatto ottenuto da una Conservazione lì può andare nell'esagono rosa.",
+  "goals": [
+   {
+    "kind": "discs",
+    "site": "cons",
+    "depths": [
+     1,
+     2,
+     3
+    ],
+    "lead": [
+     6,
+     3
+    ],
+    "text": "1 per gettone Conservazione a profondità 1/2/3"
+   },
+   {
+    "kind": "discs_vessels",
+    "cols": [
+     0,
+     4
+    ],
+    "lead": [
+     7,
+     4
+    ],
+    "text": "1 per gettone/Nave nelle colonne A ed E"
+   },
+   {
+    "kind": "discs",
+    "depths": [
+     4,
+     5
+    ],
+    "lead": [
+     4,
+     2
+    ],
+    "text": "1 per gettone a profondità 4/5"
+   }
+  ],
+  "hex_r": 0.0326,
+  "image": "res://assets/missions/m4.jpg"
+ },
+ "5": {
+  "name": "Stella cadente",
+  "name_en": "Fallen Star",
+  "columns": 7,
+  "max_depth": 3,
+  "remove_depths": [
+   4,
+   5
+  ],
+  "setup": [
+   [
+    "atoll",
+    0,
+    1
+   ],
+   [
+    "calm_seas",
+    1,
+    1
+   ],
+   [
+    "random",
+    2,
+    1
+   ],
+   [
+    "random",
+    3,
+    1
+   ],
+   [
+    "ledge_elevator",
+    0,
+    2
+   ]
+  ],
+  "launch": "any_depth1",
+  "one_group": true,
+  "hexes": [
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.2487,
+     0.3043
+    ],
+    "r": "P",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     1,
+     2
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.2157,
+     0.3899
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     0,
+     2,
+     5,
+     6
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.2816,
+     0.3899
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     0,
+     1,
+     3,
+     6,
+     7
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     1
+    ],
+    "pos": [
+     0.3474,
+     0.3899
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     2,
+     4,
+     7,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     1
+    ],
+    "pos": [
+     0.4133,
+     0.3899
+    ],
+    "r": "CD",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     3,
+     8,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     2
+    ],
+    "pos": [
+     0.1828,
+     0.4754
+    ],
+    "r": "ID",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     1,
+     6,
+     10,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     2
+    ],
+    "pos": [
+     0.2487,
+     0.4754
+    ],
+    "r": "SS",
+    "pts": 1,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     1,
+     2,
+     5,
+     7,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     2
+    ],
+    "pos": [
+     0.3145,
+     0.4754
+    ],
+    "r": "SS",
+    "pts": 1,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     2,
+     3,
+     6,
+     8,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     2
+    ],
+    "pos": [
+     0.3804,
+     0.4754
+    ],
+    "r": "SS",
+    "pts": 1,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     3,
+     4,
+     7,
+     9,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     2
+    ],
+    "pos": [
+     0.4462,
+     0.4754
+    ],
+    "r": "AD",
+    "pts": 1,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     4,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     3
+    ],
+    "pos": [
+     0.1499,
+     0.561
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     5,
+     11,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     3
+    ],
+    "pos": [
+     0.2157,
+     0.561
+    ],
+    "r": "RD",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     5,
+     6,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     3
+    ],
+    "pos": [
+     0.3474,
+     0.561
+    ],
+    "r": "AA",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     7,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     4
+    ],
+    "pos": [
+     0.0511,
+     0.6465
+    ],
+    "r": "RD",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     14,
+     15
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     0,
+     4
+    ],
+    "pos": [
+     0.117,
+     0.6465
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     10,
+     13,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     5
+    ],
+    "pos": [
+     0.084,
+     0.732
+    ],
+    "r": "CD",
+    "pts": 0,
+    "inf": false,
+    "g": "a",
+    "adj": [
+     13,
+     14
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     99,
+     99
+    ],
+    "pos": [
+     0.582,
+     0.5456
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": true,
+    "g": "a",
+    "adj": [],
+    "from": [
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     4
+    ],
+    "pos": [
+     0.4462,
+     0.6465
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     21,
+     22
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     8,
+     4
+    ],
+    "pos": [
+     0.6438,
+     0.6465
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     23,
+     24
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     3,
+     5
+    ],
+    "pos": [
+     0.2816,
+     0.732
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     20,
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     5
+    ],
+    "pos": [
+     0.3474,
+     0.732
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     19,
+     21,
+     25,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     5
+    ],
+    "pos": [
+     0.4133,
+     0.732
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     17,
+     20,
+     22,
+     26,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     5
+    ],
+    "pos": [
+     0.4791,
+     0.732
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     17,
+     21,
+     27,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     8,
+     5
+    ],
+    "pos": [
+     0.6108,
+     0.732
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     18,
+     24,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     9,
+     5
+    ],
+    "pos": [
+     0.6767,
+     0.732
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     18,
+     23
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     4,
+     6
+    ],
+    "pos": [
+     0.3145,
+     0.8176
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     19,
+     20,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     6
+    ],
+    "pos": [
+     0.3804,
+     0.8176
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     20,
+     21,
+     25,
+     27,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     6
+    ],
+    "pos": [
+     0.4462,
+     0.8176
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     21,
+     22,
+     26,
+     28,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     6
+    ],
+    "pos": [
+     0.5121,
+     0.8176
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     22,
+     27,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     8,
+     6
+    ],
+    "pos": [
+     0.5779,
+     0.8176
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     23,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     7
+    ],
+    "pos": [
+     0.4133,
+     0.9031
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "g": "b",
+    "adj": [
+     26,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     98,
+     98
+    ],
+    "pos": [
+     0.1769,
+     0.8278
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "g": "b",
+    "adj": [],
+    "from": [
+     19
+    ],
+    "entry": false
+   }
+  ],
+  "rule": "Il tabellone Impatto è diviso in due delfini: ogni giocatore mette i suoi segnalini su uno solo (lo sceglie col primo).",
+  "goals": [
+   {
+    "kind": "sonar_vessels",
+    "cols": [
+     0,
+     1
+    ],
+    "lead": [
+     2,
+     1
+    ],
+    "text": "1 per gettone Sonar/Nave nelle colonne A e B"
+   },
+   {
+    "kind": "journal_vessels",
+    "cols": [
+     4,
+     5,
+     6
+    ],
+    "lead": [
+     2,
+     1
+    ],
+    "text": "1 per gettone Diario/Nave nelle colonne E, F e G"
+   },
+   {
+    "kind": "discs",
+    "site": "cons",
+    "depths": [
+     2,
+     3
+    ],
+    "lead": [
+     4,
+     2
+    ],
+    "text": "1 per gettone Conservazione a profondità 2/3"
+   }
+  ],
+  "hex_r": 0.0329,
+  "image": "res://assets/missions/m5.jpg"
+ },
+ "6": {
+  "name": "Ricerca de «La Stella Marina»",
+  "name_en": "Star Search",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "atoll",
+    0,
+    1
+   ],
+   [
+    "remote_anchorage",
+    2,
+    1
+   ],
+   [
+    "calm_seas",
+    4,
+    1
+   ],
+   [
+    "ledge_elevator",
+    0,
+    2
+   ],
+   [
+    "resupply_modules",
+    2,
+    2
+   ],
+   [
+    "shipwreck",
+    4,
+    2
+   ]
+  ],
+  "fallen_star": "depth5",
+  "mark_discovered": true,
+  "launch": "any_depth1",
+  "moving": true,
+  "hexes": [
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.0577,
+     0.5221
+    ],
+    "r": "D",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     5,
+     9
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     1,
+     2
+    ],
+    "pos": [
+     0.1739,
+     0.5221
+    ],
+    "r": "D",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     5,
+     6,
+     9,
+     10
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     2,
+     4
+    ],
+    "pos": [
+     0.2902,
+     0.5221
+    ],
+    "r": "D",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     6,
+     7,
+     10,
+     11
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     3,
+     6
+    ],
+    "pos": [
+     0.4064,
+     0.5221
+    ],
+    "r": "D",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     7,
+     8,
+     11,
+     12
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     4,
+     8
+    ],
+    "pos": [
+     0.5226,
+     0.5221
+    ],
+    "r": "D",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     8,
+     12
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.1158,
+     0.4718
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     1,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     3
+    ],
+    "pos": [
+     0.232,
+     0.4718
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     5
+    ],
+    "pos": [
+     0.3483,
+     0.4718
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     2,
+     3,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     7
+    ],
+    "pos": [
+     0.4645,
+     0.4718
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     3,
+     4,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.1158,
+     0.5724
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     1,
+     5,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     3
+    ],
+    "pos": [
+     0.232,
+     0.5724
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     6,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     5
+    ],
+    "pos": [
+     0.3483,
+     0.5724
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     2,
+     3,
+     7,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     7
+    ],
+    "pos": [
+     0.4645,
+     0.5724
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     3,
+     4,
+     8,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     1
+    ],
+    "pos": [
+     0.1158,
+     0.6731
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     9,
+     17,
+     25,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     3
+    ],
+    "pos": [
+     0.232,
+     0.6731
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     10,
+     18,
+     28,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     5
+    ],
+    "pos": [
+     0.3483,
+     0.6731
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     11,
+     19,
+     31,
+     34
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     7
+    ],
+    "pos": [
+     0.4645,
+     0.6731
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     12,
+     20,
+     34,
+     37
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     1
+    ],
+    "pos": [
+     0.1158,
+     0.7738
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     13,
+     21,
+     25,
+     26,
+     28,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     3
+    ],
+    "pos": [
+     0.232,
+     0.7738
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     14,
+     22,
+     28,
+     29,
+     31,
+     32
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     5
+    ],
+    "pos": [
+     0.3483,
+     0.7738
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     15,
+     23,
+     31,
+     32,
+     34,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     7
+    ],
+    "pos": [
+     0.4645,
+     0.7738
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     16,
+     24,
+     34,
+     35,
+     37,
+     38
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     1
+    ],
+    "pos": [
+     0.1158,
+     0.8744
+    ],
+    "r": "L",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     17,
+     26,
+     27,
+     29,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     3
+    ],
+    "pos": [
+     0.232,
+     0.8744
+    ],
+    "r": "L",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     18,
+     29,
+     30,
+     32,
+     33
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     5
+    ],
+    "pos": [
+     0.3483,
+     0.8744
+    ],
+    "r": "L",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     19,
+     32,
+     33,
+     35,
+     36
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     7
+    ],
+    "pos": [
+     0.4645,
+     0.8744
+    ],
+    "r": "L",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     20,
+     35,
+     36,
+     38,
+     39
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     0
+    ],
+    "pos": [
+     0.0577,
+     0.7234
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "score_col": 0,
+    "adj": [
+     13,
+     17,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     0
+    ],
+    "pos": [
+     0.0577,
+     0.8241
+    ],
+    "r": "",
+    "pts": 4,
+    "inf": false,
+    "score_col": 0,
+    "adj": [
+     17,
+     21,
+     25,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     0
+    ],
+    "pos": [
+     0.0577,
+     0.9247
+    ],
+    "r": "",
+    "pts": 6,
+    "inf": false,
+    "score_col": 0,
+    "adj": [
+     21,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     2
+    ],
+    "pos": [
+     0.1739,
+     0.7234
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "score_col": 1,
+    "adj": [
+     13,
+     14,
+     17,
+     18,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     2
+    ],
+    "pos": [
+     0.1739,
+     0.8241
+    ],
+    "r": "",
+    "pts": 4,
+    "inf": false,
+    "score_col": 1,
+    "adj": [
+     17,
+     18,
+     21,
+     22,
+     28,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     2
+    ],
+    "pos": [
+     0.1739,
+     0.9247
+    ],
+    "r": "",
+    "pts": 6,
+    "inf": false,
+    "score_col": 1,
+    "adj": [
+     21,
+     22,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     4
+    ],
+    "pos": [
+     0.2902,
+     0.7234
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "score_col": 2,
+    "adj": [
+     14,
+     15,
+     18,
+     19,
+     32
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     4
+    ],
+    "pos": [
+     0.2902,
+     0.8241
+    ],
+    "r": "",
+    "pts": 4,
+    "inf": false,
+    "score_col": 2,
+    "adj": [
+     18,
+     19,
+     22,
+     23,
+     31,
+     33
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     4
+    ],
+    "pos": [
+     0.2902,
+     0.9247
+    ],
+    "r": "",
+    "pts": 6,
+    "inf": false,
+    "score_col": 2,
+    "adj": [
+     22,
+     23,
+     32
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     6
+    ],
+    "pos": [
+     0.4064,
+     0.7234
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "score_col": 3,
+    "adj": [
+     15,
+     16,
+     19,
+     20,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     6
+    ],
+    "pos": [
+     0.4064,
+     0.8241
+    ],
+    "r": "",
+    "pts": 4,
+    "inf": false,
+    "score_col": 3,
+    "adj": [
+     19,
+     20,
+     23,
+     24,
+     34,
+     36
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     6
+    ],
+    "pos": [
+     0.4064,
+     0.9247
+    ],
+    "r": "",
+    "pts": 6,
+    "inf": false,
+    "score_col": 3,
+    "adj": [
+     23,
+     24,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     8
+    ],
+    "pos": [
+     0.5226,
+     0.7234
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "score_col": 4,
+    "adj": [
+     16,
+     20,
+     38
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     8
+    ],
+    "pos": [
+     0.5226,
+     0.8241
+    ],
+    "r": "",
+    "pts": 4,
+    "inf": false,
+    "score_col": 4,
+    "adj": [
+     20,
+     24,
+     37,
+     39
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     8,
+     8
+    ],
+    "pos": [
+     0.5226,
+     0.9247
+    ],
+    "r": "",
+    "pts": 6,
+    "inf": false,
+    "score_col": 4,
+    "adj": [
+     24,
+     38
+    ],
+    "entry": false
+   }
+  ],
+  "rule": "Un solo segnalino Impatto che si sposta: ogni Impatto lo muove in un esagono vicino libero (e ne dai la ricompensa); negli esagoni a punti solo dopo la scoperta della Stella Cadente (+2 nella sua colonna). Ogni zona che scopri vale per l'obiettivo 2; chi scopre la Stella Cadente sceglie il tipo di sito dell'obiettivo 3.",
+  "goals": [
+   {
+    "kind": "zones_with_disc",
+    "depths": [
+     2,
+     3,
+     4
+    ],
+    "lead": [
+     4,
+     2
+    ],
+    "text": "1 per zona a profondità 2/3/4 con un tuo gettone"
+   },
+   {
+    "kind": "discovered",
+    "most": [
+     [
+      "depth",
+      3
+     ],
+     [
+      "depth",
+      4
+     ],
+     [
+      "depth",
+      5
+     ],
+     [
+      "col",
+      1
+     ],
+     [
+      "col",
+      3
+     ]
+    ],
+    "bonus": 2,
+    "text": "1 per zona scoperta da te; 2 a chi ne ha scoperte di più a profondità 3, 4, 5 e nelle colonne B e D"
+   },
+   {
+    "kind": "star_sites",
+    "text": "1 per gettone nel tipo di sito scelto da chi scopre la Stella Cadente (3 punti a lui)"
+   }
+  ],
+  "hex_r": 0.0336,
+  "image": "res://assets/missions/m6.jpg"
+ },
+ "7": {
+  "name": "Recuperare la Stella cadente",
+  "name_en": "Recover the Fallen Star",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "remote_anchorage",
+    2,
+    1
+   ],
+   [
+    "resupply_modules",
+    2,
+    2
+   ],
+   [
+    "random",
+    2,
+    3
+   ],
+   [
+    "random",
+    2,
+    4
+   ],
+   [
+    "fallen_star",
+    2,
+    5
+   ]
+  ],
+  "launch": "remote_anchorage",
+  "launch_later": "any_depth1",
+  "hexes": [
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.2007,
+     0.2822
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     3
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     0
+    ],
+    "pos": [
+     0.2672,
+     0.2822
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     3,
+     4
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.1675,
+     0.3686
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     3,
+     7,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.2339,
+     0.3686
+    ],
+    "r": "CD",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     0,
+     1,
+     2,
+     4,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     1
+    ],
+    "pos": [
+     0.3004,
+     0.3686
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     1,
+     3,
+     5,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     1
+    ],
+    "pos": [
+     0.3669,
+     0.3686
+    ],
+    "r": "CD",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     4,
+     6,
+     9,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     1
+    ],
+    "pos": [
+     0.4334,
+     0.3686
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     5,
+     10,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     2
+    ],
+    "pos": [
+     0.1342,
+     0.4549
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     2,
+     8,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     2
+    ],
+    "pos": [
+     0.2007,
+     0.4549
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     2,
+     3,
+     7,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     2
+    ],
+    "pos": [
+     0.3336,
+     0.4549
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     4,
+     5,
+     10,
+     13,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     2
+    ],
+    "pos": [
+     0.4001,
+     0.4549
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     5,
+     6,
+     9,
+     11,
+     14,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     2
+    ],
+    "pos": [
+     0.4666,
+     0.4549
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     6,
+     10,
+     15,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     3
+    ],
+    "pos": [
+     0.2339,
+     0.5413
+    ],
+    "r": "IS",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     8,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     3
+    ],
+    "pos": [
+     0.3004,
+     0.5413
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     9,
+     12,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     3
+    ],
+    "pos": [
+     0.3669,
+     0.5413
+    ],
+    "r": "IS",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     9,
+     10,
+     13,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     3
+    ],
+    "pos": [
+     0.4334,
+     0.5413
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     10,
+     11,
+     14,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     3
+    ],
+    "pos": [
+     0.4998,
+     0.5413
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "adj": [
+     11,
+     15
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     0,
+     3
+    ],
+    "pos": [
+     0.101,
+     0.5413
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     7,
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     4
+    ],
+    "pos": [
+     0.1342,
+     0.6277
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     17,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     5
+    ],
+    "pos": [
+     0.101,
+     0.714
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "adj": [
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     5
+    ],
+    "pos": [
+     0.2339,
+     0.714
+    ],
+    "r": "L",
+    "pts": 1,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     21,
+     22
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     5
+    ],
+    "pos": [
+     0.3004,
+     0.714
+    ],
+    "r": "L",
+    "pts": 1,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     20,
+     23
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     6
+    ],
+    "pos": [
+     0.2007,
+     0.8004
+    ],
+    "r": "L",
+    "pts": 1,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     20,
+     25,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     6
+    ],
+    "pos": [
+     0.3336,
+     0.8004
+    ],
+    "r": "L",
+    "pts": 1,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     21,
+     27,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     7
+    ],
+    "pos": [
+     0.101,
+     0.8867
+    ],
+    "r": "S",
+    "pts": 2,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     7
+    ],
+    "pos": [
+     0.1675,
+     0.8867
+    ],
+    "r": "L",
+    "pts": 1,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     22,
+     24,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     7
+    ],
+    "pos": [
+     0.2339,
+     0.8867
+    ],
+    "r": "L",
+    "pts": 1,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     22,
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     6
+    ],
+    "pos": [
+     0.4001,
+     0.8004
+    ],
+    "r": "",
+    "pts": 3,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     23,
+     28,
+     30,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     6
+    ],
+    "pos": [
+     0.4666,
+     0.8004
+    ],
+    "r": "",
+    "pts": 3,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     27,
+     29,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     5
+    ],
+    "pos": [
+     0.4998,
+     0.714
+    ],
+    "r": "",
+    "pts": 3,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     28
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     6,
+     7
+    ],
+    "pos": [
+     0.3669,
+     0.8867
+    ],
+    "r": "S",
+    "pts": 2,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     23,
+     27,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     7
+    ],
+    "pos": [
+     0.4334,
+     0.8867
+    ],
+    "r": "S",
+    "pts": 2,
+    "inf": false,
+    "g": "rescue",
+    "adj": [
+     27,
+     28,
+     30
+    ],
+    "entry": false
+   }
+  ],
+  "rescue": true,
+  "rule": "Nella griglia di salvataggio vanno solo gli Impatti presi direttamente dalla Stella Cadente (che puoi anche mettere nella griglia principale).",
+  "goals": [
+   {
+    "kind": "zones_disc_vessel",
+    "cols": [
+     2
+    ],
+    "mult": 2,
+    "lead": [
+     2,
+     1
+    ],
+    "text": "2 per zona della colonna C con un tuo gettone o una Nave"
+   },
+   {
+    "kind": "cons_journal",
+    "cols": [
+     0,
+     1,
+     3,
+     4
+    ],
+    "lead": [
+     6,
+     3
+    ],
+    "text": "1 per gettone Conservazione/Diario nelle colonne A, B, D ed E"
+   },
+   {
+    "kind": "rescue",
+    "lead": [
+     4,
+     2
+    ],
+    "text": "4 a chi ha più segnalini nella griglia di salvataggio, 2 al secondo"
+   }
+  ],
+  "hex_r": 0.0332,
+  "image": "res://assets/missions/m7.jpg"
+ },
+ "8": {
+  "name": "Nuovi orizzonti",
+  "name_en": "New Horizons",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "sea_star",
+    -1,
+    1
+   ],
+   [
+    "random",
+    -1,
+    1
+   ],
+   [
+    "random",
+    -1,
+    1
+   ],
+   [
+    "random",
+    -1,
+    1
+   ],
+   [
+    "random",
+    -1,
+    1
+   ]
+  ],
+  "glass_in_stack": true,
+  "launch": "sea_star",
+  "clusters": true,
+  "hexes": [
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.0847,
+     0.2963
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "goal": 3,
+    "adj": [
+     1,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     0
+    ],
+    "pos": [
+     0.1505,
+     0.2963
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     0,
+     2,
+     8,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     0
+    ],
+    "pos": [
+     0.2164,
+     0.2963
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     1,
+     3,
+     9,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     0
+    ],
+    "pos": [
+     0.2822,
+     0.2963
+    ],
+    "r": "F:brown",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     2,
+     4,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     0
+    ],
+    "pos": [
+     0.3481,
+     0.2963
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     3,
+     5
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     0
+    ],
+    "pos": [
+     0.4139,
+     0.2963
+    ],
+    "r": "F:blue",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     4,
+     6,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     0
+    ],
+    "pos": [
+     0.4798,
+     0.2963
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     5,
+     7,
+     11,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     0
+    ],
+    "pos": [
+     0.5456,
+     0.2963
+    ],
+    "r": "F:brown",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     6,
+     12,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     1
+    ],
+    "pos": [
+     0.1176,
+     0.3819
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     0,
+     1,
+     9,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.1834,
+     0.3819
+    ],
+    "r": "F:green",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     1,
+     2,
+     8,
+     10,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     1
+    ],
+    "pos": [
+     0.2493,
+     0.3819
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     2,
+     3,
+     9,
+     15,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     1
+    ],
+    "pos": [
+     0.4468,
+     0.3819
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     5,
+     6,
+     12,
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     1
+    ],
+    "pos": [
+     0.5127,
+     0.3819
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     6,
+     7,
+     11,
+     13,
+     18,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     1
+    ],
+    "pos": [
+     0.5786,
+     0.3819
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     7,
+     12,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     2
+    ],
+    "pos": [
+     0.0847,
+     0.4674
+    ],
+    "r": "F:brown",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     8,
+     20,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     2
+    ],
+    "pos": [
+     0.2164,
+     0.4674
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     9,
+     10,
+     16,
+     22,
+     23
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     2
+    ],
+    "pos": [
+     0.2822,
+     0.4674
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     10,
+     15,
+     17,
+     23,
+     24
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     2
+    ],
+    "pos": [
+     0.3481,
+     0.4674
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     16,
+     24,
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     2
+    ],
+    "pos": [
+     0.4798,
+     0.4674
+    ],
+    "r": "F:yellow",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     11,
+     12,
+     19,
+     26,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     2
+    ],
+    "pos": [
+     0.5456,
+     0.4674
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     12,
+     13,
+     18,
+     27,
+     28
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     3
+    ],
+    "pos": [
+     0.0517,
+     0.553
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     14,
+     21,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     3
+    ],
+    "pos": [
+     0.1176,
+     0.553
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     14,
+     20,
+     22,
+     29
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     3
+    ],
+    "pos": [
+     0.1834,
+     0.553
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     15,
+     21,
+     23,
+     30
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     3
+    ],
+    "pos": [
+     0.2493,
+     0.553
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     15,
+     16,
+     22,
+     24,
+     30,
+     31
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     3
+    ],
+    "pos": [
+     0.3151,
+     0.553
+    ],
+    "r": "I",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     16,
+     17,
+     23,
+     25,
+     31
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     3,
+     3
+    ],
+    "pos": [
+     0.381,
+     0.553
+    ],
+    "r": "C",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     17,
+     24,
+     26,
+     32
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     4,
+     3
+    ],
+    "pos": [
+     0.4468,
+     0.553
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     18,
+     25,
+     27,
+     32,
+     33
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     3
+    ],
+    "pos": [
+     0.5127,
+     0.553
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     18,
+     19,
+     26,
+     28,
+     33,
+     34
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     3
+    ],
+    "pos": [
+     0.5786,
+     0.553
+    ],
+    "r": "F:green",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     19,
+     27,
+     34
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     4
+    ],
+    "pos": [
+     0.0847,
+     0.6385
+    ],
+    "r": "F:yellow",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     20,
+     21,
+     35
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     4
+    ],
+    "pos": [
+     0.2164,
+     0.6385
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     22,
+     23,
+     31,
+     36,
+     37
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     4
+    ],
+    "pos": [
+     0.2822,
+     0.6385
+    ],
+    "r": "I",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     23,
+     24,
+     30,
+     37,
+     38
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     3,
+     4
+    ],
+    "pos": [
+     0.4139,
+     0.6385
+    ],
+    "r": "C",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     25,
+     26,
+     33,
+     39,
+     40
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     4,
+     4
+    ],
+    "pos": [
+     0.4798,
+     0.6385
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     26,
+     27,
+     32,
+     34,
+     40,
+     41
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     4
+    ],
+    "pos": [
+     0.5456,
+     0.6385
+    ],
+    "r": "F:blue",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     27,
+     28,
+     33,
+     41,
+     42
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     5
+    ],
+    "pos": [
+     0.1176,
+     0.724
+    ],
+    "r": "F:green",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     29,
+     36,
+     43
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     5
+    ],
+    "pos": [
+     0.1834,
+     0.724
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     30,
+     35,
+     37,
+     43,
+     44
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     5
+    ],
+    "pos": [
+     0.2493,
+     0.724
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     30,
+     31,
+     36,
+     38,
+     44,
+     45
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     5
+    ],
+    "pos": [
+     0.3151,
+     0.724
+    ],
+    "r": "R",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     31,
+     37,
+     39,
+     45,
+     46
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     2,
+     5
+    ],
+    "pos": [
+     0.381,
+     0.724
+    ],
+    "r": "R",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     32,
+     38,
+     40,
+     46
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     3,
+     5
+    ],
+    "pos": [
+     0.4468,
+     0.724
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     32,
+     33,
+     39,
+     41
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     5
+    ],
+    "pos": [
+     0.5127,
+     0.724
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     33,
+     34,
+     40,
+     42,
+     47
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     5
+    ],
+    "pos": [
+     0.5786,
+     0.724
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     34,
+     41,
+     47
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     6
+    ],
+    "pos": [
+     0.1505,
+     0.8096
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     35,
+     36,
+     44,
+     49,
+     50
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     6
+    ],
+    "pos": [
+     0.2164,
+     0.8096
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     36,
+     37,
+     43,
+     45,
+     50,
+     51
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     6
+    ],
+    "pos": [
+     0.2822,
+     0.8096
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     37,
+     38,
+     44,
+     46,
+     51,
+     52
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     6
+    ],
+    "pos": [
+     0.3481,
+     0.8096
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     38,
+     39,
+     45,
+     52,
+     53
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     6
+    ],
+    "pos": [
+     0.5456,
+     0.8096
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     41,
+     42,
+     55
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -4,
+     7
+    ],
+    "pos": [
+     0.0517,
+     0.8951
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "goal": 1,
+    "adj": [
+     49
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -3,
+     7
+    ],
+    "pos": [
+     0.1176,
+     0.8951
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     43,
+     48,
+     50
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -2,
+     7
+    ],
+    "pos": [
+     0.1834,
+     0.8951
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     43,
+     44,
+     49,
+     51
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     -1,
+     7
+    ],
+    "pos": [
+     0.2493,
+     0.8951
+    ],
+    "r": "F:yellow",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     44,
+     45,
+     50,
+     52
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     0,
+     7
+    ],
+    "pos": [
+     0.3151,
+     0.8951
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     45,
+     46,
+     51,
+     53
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     7
+    ],
+    "pos": [
+     0.381,
+     0.8951
+    ],
+    "r": "F:blue",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     46,
+     52,
+     54
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     7
+    ],
+    "pos": [
+     0.4468,
+     0.8951
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "adj": [
+     53,
+     55
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     7
+    ],
+    "pos": [
+     0.5127,
+     0.8951
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": false,
+    "goal": 2,
+    "adj": [
+     47,
+     54
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     97,
+     97
+    ],
+    "pos": [
+     0.6616,
+     0.8015
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": true,
+    "full": true,
+    "adj": [],
+    "entry": false
+   }
+  ],
+  "rule": "Esagoni Obiettivo: chi ci mette un segnalino sceglie come si conta quell'obiettivo per tutti (senza segnalino non si conta). Ogni segnalino del tuo secondo agglomerato più grande vale +1. Il Osservatorio, se scoperto, va sotto la Stella Marina. L'infinito solo a griglia piena.",
+  "goals": [
+   {
+    "kind": "choice",
+    "hex_goal": 1,
+    "options": [
+     {
+      "kind": "zones_side",
+      "side": "left",
+      "lead": [
+       2,
+       1
+      ],
+      "label": "Vicino",
+      "text": "1 per zona nella colonna della Stella Marina e a sinistra con un tuo gettone"
+     },
+     {
+      "kind": "zones_side",
+      "side": "right",
+      "lead": [
+       2,
+       1
+      ],
+      "label": "Lontano",
+      "text": "1 per zona nella colonna della Stella Marina e a destra con un tuo gettone"
+     }
+    ]
+   },
+   {
+    "kind": "choice",
+    "hex_goal": 2,
+    "options": [
+     {
+      "kind": "discs",
+      "depths": [
+       2,
+       3
+      ],
+      "lead": [
+       2,
+       1
+      ],
+      "label": "Poco profondo",
+      "text": "1 per gettone a profondità 2/3"
+     },
+     {
+      "kind": "discs",
+      "depths": [
+       4,
+       5
+      ],
+      "lead": [
+       2,
+       1
+      ],
+      "label": "Profondo",
+      "text": "1 per gettone a profondità 4/5"
+     }
+    ]
+   },
+   {
+    "kind": "choice",
+    "hex_goal": 3,
+    "options": [
+     {
+      "kind": "fields",
+      "lead": [
+       2,
+       1
+      ],
+      "label": "Ristretto",
+      "text": "1 per simbolo di Campo del tuo tipo più numeroso"
+     },
+     {
+      "kind": "field_sets",
+      "lead": [
+       2,
+       1
+      ],
+      "label": "Ampio",
+      "text": "3 per serie dei quattro simboli di Campo"
+     }
+    ]
+   }
+  ],
+  "hex_r": 0.0329,
+  "image": "res://assets/missions/m8.jpg"
+ },
+ "9": {
+  "name": "La fuoriuscita",
+  "name_en": "The Spill",
+  "columns": 6,
+  "max_depth": 4,
+  "remove_depths": [
+   5
+  ],
+  "setup": [
+   [
+    "oil_rig",
+    2,
+    1
+   ],
+   [
+    "sea_star",
+    3,
+    1
+   ],
+   [
+    "whale_calving",
+    2,
+    2
+   ],
+   [
+    "looking_glass",
+    3,
+    2
+   ]
+  ],
+  "launch": "sea_star",
+  "cleanup": {
+   "depth_ok": {
+    "3": 2,
+    "4": 5
+   },
+   "clean_at": [
+    2,
+    2,
+    2,
+    4,
+    4,
+    6,
+    6,
+    8,
+    8
+   ],
+   "max": 8,
+   "px": [
+    [
+     0.116,
+     0.3688
+    ],
+    [
+     0.1729,
+     0.3688
+    ],
+    [
+     0.2297,
+     0.3688
+    ],
+    [
+     0.2865,
+     0.3688
+    ],
+    [
+     0.3434,
+     0.3688
+    ],
+    [
+     0.4002,
+     0.3688
+    ],
+    [
+     0.457,
+     0.3688
+    ],
+    [
+     0.5139,
+     0.3688
+    ],
+    [
+     0.5707,
+     0.3688
+    ]
+   ]
+  },
+  "hexes": [
+   {
+    "ij": [
+     0,
+     0
+    ],
+    "pos": [
+     0.1148,
+     0.5428
+    ],
+    "r": "A",
+    "pts": -2,
+    "inf": false,
+    "col": 0,
+    "adj": [
+     1
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     1
+    ],
+    "pos": [
+     0.1718,
+     0.5922
+    ],
+    "r": "A",
+    "pts": -2,
+    "inf": false,
+    "col": 1,
+    "adj": [
+     0,
+     2,
+     5,
+     6
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     1
+    ],
+    "pos": [
+     0.1718,
+     0.691
+    ],
+    "r": "RI",
+    "pts": -2,
+    "inf": false,
+    "col": 1,
+    "adj": [
+     1,
+     3,
+     6
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     1
+    ],
+    "pos": [
+     0.1718,
+     0.7897
+    ],
+    "r": "N",
+    "pts": 1,
+    "inf": false,
+    "col": 1,
+    "adj": [
+     2,
+     4
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     1
+    ],
+    "pos": [
+     0.1718,
+     0.8885
+    ],
+    "r": "R",
+    "pts": 1,
+    "inf": false,
+    "col": 1,
+    "adj": [
+     3
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1,
+     2
+    ],
+    "pos": [
+     0.2288,
+     0.5428
+    ],
+    "r": "A",
+    "pts": -2,
+    "inf": false,
+    "col": 2,
+    "adj": [
+     1,
+     6,
+     7
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     2
+    ],
+    "pos": [
+     0.2288,
+     0.6416
+    ],
+    "r": "A",
+    "pts": -2,
+    "inf": false,
+    "col": 2,
+    "adj": [
+     1,
+     2,
+     5,
+     7,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     3
+    ],
+    "pos": [
+     0.2859,
+     0.5922
+    ],
+    "r": "A",
+    "pts": -2,
+    "inf": false,
+    "col": 3,
+    "adj": [
+     5,
+     6,
+     8,
+     11
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     3
+    ],
+    "pos": [
+     0.2859,
+     0.691
+    ],
+    "r": "RC",
+    "pts": -2,
+    "inf": false,
+    "col": 3,
+    "adj": [
+     6,
+     7,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     3
+    ],
+    "pos": [
+     0.2859,
+     0.7897
+    ],
+    "r": "I",
+    "pts": 1,
+    "inf": false,
+    "col": 3,
+    "adj": [
+     8,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     3
+    ],
+    "pos": [
+     0.2859,
+     0.8885
+    ],
+    "r": "R",
+    "pts": 1,
+    "inf": false,
+    "col": 3,
+    "adj": [
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     2,
+     4
+    ],
+    "pos": [
+     0.3429,
+     0.5428
+    ],
+    "r": "LL",
+    "pts": -2,
+    "inf": false,
+    "col": 4,
+    "adj": [
+     7,
+     12
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     5
+    ],
+    "pos": [
+     0.3999,
+     0.5922
+    ],
+    "r": "RR",
+    "pts": -2,
+    "inf": false,
+    "col": 5,
+    "adj": [
+     11,
+     13,
+     16,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     5
+    ],
+    "pos": [
+     0.3999,
+     0.691
+    ],
+    "r": "NN",
+    "pts": -2,
+    "inf": false,
+    "col": 5,
+    "adj": [
+     12,
+     14,
+     17
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     5
+    ],
+    "pos": [
+     0.3999,
+     0.7897
+    ],
+    "r": "C",
+    "pts": 1,
+    "inf": false,
+    "col": 5,
+    "adj": [
+     13,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     5
+    ],
+    "pos": [
+     0.3999,
+     0.8885
+    ],
+    "r": "R",
+    "pts": 1,
+    "inf": false,
+    "col": 5,
+    "adj": [
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     3,
+     6
+    ],
+    "pos": [
+     0.4569,
+     0.5428
+    ],
+    "r": "LL",
+    "pts": -2,
+    "inf": false,
+    "col": 6,
+    "adj": [
+     12,
+     17,
+     18
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     6
+    ],
+    "pos": [
+     0.4569,
+     0.6416
+    ],
+    "r": "A",
+    "pts": -2,
+    "inf": false,
+    "col": 6,
+    "adj": [
+     12,
+     13,
+     16,
+     18,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     7
+    ],
+    "pos": [
+     0.514,
+     0.5922
+    ],
+    "r": "II",
+    "pts": -2,
+    "inf": false,
+    "col": 7,
+    "adj": [
+     16,
+     17,
+     19,
+     22,
+     23
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     5,
+     7
+    ],
+    "pos": [
+     0.514,
+     0.691
+    ],
+    "r": "CC",
+    "pts": -2,
+    "inf": false,
+    "col": 7,
+    "adj": [
+     17,
+     18,
+     20,
+     23
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     6,
+     7
+    ],
+    "pos": [
+     0.514,
+     0.7897
+    ],
+    "r": "N",
+    "pts": 1,
+    "inf": false,
+    "col": 7,
+    "adj": [
+     19,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     7,
+     7
+    ],
+    "pos": [
+     0.514,
+     0.8885
+    ],
+    "r": "N",
+    "pts": 1,
+    "inf": false,
+    "col": 7,
+    "adj": [
+     20
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     4,
+     8
+    ],
+    "pos": [
+     0.571,
+     0.5428
+    ],
+    "r": "AA",
+    "pts": -2,
+    "inf": false,
+    "col": 8,
+    "adj": [
+     18,
+     23
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     5,
+     8
+    ],
+    "pos": [
+     0.571,
+     0.6416
+    ],
+    "r": "IC",
+    "pts": -2,
+    "inf": false,
+    "col": 8,
+    "adj": [
+     18,
+     19,
+     22
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     96,
+     96
+    ],
+    "pos": [
+     0.0627,
+     0.7399
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "cons_direct": true,
+    "adj": [],
+    "from": [
+     0
+    ],
+    "entry": false
+   }
+  ],
+  "rule": "La prima volta che Conservi in una zona usi un segnalino Impatto al posto del gettone e avanzi sul tracciato della Bonifica. Profondità 3 e 4 si scoprono solo dopo i passi «OK». Gli esagoni inquinati valgono -2 finché la tua Bonifica non raggiunge la spunta della loro colonna. Un Impatto preso direttamente da una Conservazione può andare nell'infinito.",
+  "goals": [
+   {
+    "kind": "cleanup",
+    "lead": [
+     2,
+     1
+    ],
+    "text": "Punti pari al tuo avanzamento sul tracciato Bonifica"
+   },
+   {
+    "kind": "discs_vessels",
+    "depths": [
+     1
+    ],
+    "lead": [
+     5,
+     3
+    ],
+    "text": "1 per gettone/Nave a profondità 1"
+   },
+   {
+    "kind": "discs",
+    "site": "cons",
+    "depths": [
+     2,
+     3,
+     4
+    ],
+    "lead": [
+     4,
+     2
+    ],
+    "text": "1 per gettone Conservazione a profondità 2, 3 e 4"
+   }
+  ],
+  "hex_r": 0.0329,
+  "image": "res://assets/missions/m9.jpg"
+ },
+ "10": {
+  "name": "Acque profonde",
+  "name_en": "The Deepest Sea",
+  "columns": 5,
+  "max_depth": 5,
+  "setup": [
+   [
+    "random",
+    1,
+    1
+   ],
+   [
+    "sea_star",
+    2,
+    1
+   ],
+   [
+    "random",
+    3,
+    1
+   ],
+   [
+    "looking_glass",
+    2,
+    2
+   ]
+  ],
+  "launch": "sea_star",
+  "depth_rows": true,
+  "hexes": [
+   {
+    "ij": [
+     474,
+     740
+    ],
+    "pos": [
+     0.1486,
+     0.3481
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "row": 1,
+    "adj": [
+     1
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     686,
+     740
+    ],
+    "pos": [
+     0.2151,
+     0.3481
+    ],
+    "r": "S",
+    "pts": 0,
+    "inf": false,
+    "row": 1,
+    "adj": [
+     0,
+     2
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     900,
+     740
+    ],
+    "pos": [
+     0.2822,
+     0.3481
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "row": 1,
+    "adj": [
+     1,
+     3
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1110,
+     740
+    ],
+    "pos": [
+     0.3481,
+     0.3481
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "row": 1,
+    "adj": [
+     2,
+     4
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1320,
+     740
+    ],
+    "pos": [
+     0.4139,
+     0.3481
+    ],
+    "r": "N",
+    "pts": 0,
+    "inf": false,
+    "row": 1,
+    "adj": [
+     3,
+     5
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1534,
+     740
+    ],
+    "pos": [
+     0.481,
+     0.3481
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "row": 1,
+    "adj": [
+     4
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     474,
+     1040
+    ],
+    "pos": [
+     0.1486,
+     0.4892
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "row": 2,
+    "adj": [
+     7
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     686,
+     1040
+    ],
+    "pos": [
+     0.2151,
+     0.4892
+    ],
+    "r": "I",
+    "pts": 0,
+    "inf": false,
+    "row": 2,
+    "adj": [
+     6,
+     8
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     900,
+     1040
+    ],
+    "pos": [
+     0.2822,
+     0.4892
+    ],
+    "r": "C",
+    "pts": 0,
+    "inf": false,
+    "row": 2,
+    "adj": [
+     7,
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1110,
+     1040
+    ],
+    "pos": [
+     0.3481,
+     0.4892
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "row": 2,
+    "adj": [
+     8,
+     10
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1320,
+     1040
+    ],
+    "pos": [
+     0.4139,
+     0.4892
+    ],
+    "r": "D",
+    "pts": 1,
+    "inf": false,
+    "row": 2,
+    "adj": [
+     9
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     474,
+     1340
+    ],
+    "pos": [
+     0.1486,
+     0.6303
+    ],
+    "r": "A",
+    "pts": 0,
+    "inf": false,
+    "row": 3,
+    "adj": [
+     12
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     686,
+     1340
+    ],
+    "pos": [
+     0.2151,
+     0.6303
+    ],
+    "r": "R",
+    "pts": 0,
+    "inf": false,
+    "row": 3,
+    "adj": [
+     11,
+     13
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     900,
+     1340
+    ],
+    "pos": [
+     0.2822,
+     0.6303
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "row": 3,
+    "adj": [
+     12,
+     14
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1110,
+     1340
+    ],
+    "pos": [
+     0.3481,
+     0.6303
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "row": 3,
+    "adj": [
+     13,
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1320,
+     1340
+    ],
+    "pos": [
+     0.4139,
+     0.6303
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "row": 3,
+    "adj": [
+     14,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1534,
+     1340
+    ],
+    "pos": [
+     0.481,
+     0.6303
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "row": 3,
+    "adj": [
+     15
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     474,
+     1640
+    ],
+    "pos": [
+     0.1486,
+     0.7714
+    ],
+    "r": "",
+    "pts": 3,
+    "inf": false,
+    "row": 4,
+    "adj": [
+     18
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     686,
+     1640
+    ],
+    "pos": [
+     0.2151,
+     0.7714
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "row": 4,
+    "adj": [
+     17,
+     19
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     900,
+     1640
+    ],
+    "pos": [
+     0.2822,
+     0.7714
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "row": 4,
+    "adj": [
+     18,
+     20
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1110,
+     1640
+    ],
+    "pos": [
+     0.3481,
+     0.7714
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "row": 4,
+    "adj": [
+     19,
+     21
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1320,
+     1640
+    ],
+    "pos": [
+     0.4139,
+     0.7714
+    ],
+    "r": "S",
+    "pts": 1,
+    "inf": false,
+    "row": 4,
+    "adj": [
+     20
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     474,
+     1920
+    ],
+    "pos": [
+     0.1486,
+     0.9031
+    ],
+    "r": "",
+    "pts": 3,
+    "inf": false,
+    "row": 5,
+    "adj": [
+     23
+    ],
+    "entry": true
+   },
+   {
+    "ij": [
+     686,
+     1920
+    ],
+    "pos": [
+     0.2151,
+     0.9031
+    ],
+    "r": "",
+    "pts": 3,
+    "inf": false,
+    "row": 5,
+    "adj": [
+     22,
+     24
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     900,
+     1920
+    ],
+    "pos": [
+     0.2822,
+     0.9031
+    ],
+    "r": "",
+    "pts": 3,
+    "inf": false,
+    "row": 5,
+    "adj": [
+     23,
+     25
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1110,
+     1920
+    ],
+    "pos": [
+     0.3481,
+     0.9031
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "row": 5,
+    "adj": [
+     24,
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1320,
+     1920
+    ],
+    "pos": [
+     0.4139,
+     0.9031
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "row": 5,
+    "adj": [
+     25,
+     27
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1534,
+     1920
+    ],
+    "pos": [
+     0.481,
+     0.9031
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": false,
+    "row": 5,
+    "adj": [
+     26
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1736,
+     940
+    ],
+    "pos": [
+     0.5444,
+     0.4421
+    ],
+    "r": "",
+    "pts": 1,
+    "inf": true,
+    "rows": [
+     1,
+     2,
+     3
+    ],
+    "adj": [],
+    "from": [
+     5,
+     10,
+     16
+    ],
+    "entry": false
+   },
+   {
+    "ij": [
+     1880,
+     1860
+    ],
+    "pos": [
+     0.5895,
+     0.8749
+    ],
+    "r": "",
+    "pts": 2,
+    "inf": true,
+    "rows": [
+     4,
+     5
+    ],
+    "adj": [],
+    "from": [
+     21,
+     27
+    ],
+    "entry": false
+   }
+  ],
+  "rule": "Ogni Impatto va sulla riga della profondità della zona dove l'hai ottenuto (se non viene da una zona, a una profondità dove hai una Nave).",
+  "goals": [
+   {
+    "kind": "first",
+    "event": "discover5",
+    "lead": [
+     4,
+     2
+    ],
+    "text": "4 al primo che scopre una zona di profondità 5, 2 al secondo"
+   },
+   {
+    "kind": "first",
+    "event": "travel5",
+    "lead": [
+     4,
+     3
+    ],
+    "text": "4 al primo che viaggia in una zona di profondità 5, 3 al secondo"
+   },
+   {
+    "kind": "discs",
+    "site": "journal",
+    "depths": [
+     4,
+     5
+    ],
+    "lead": [
+     7,
+     4
+    ],
+    "text": "1 per gettone Diario a profondità 4/5"
+   }
+  ],
+  "hex_r": 0.0332,
+  "image": "res://assets/missions/m10.jpg"
+ }
+}

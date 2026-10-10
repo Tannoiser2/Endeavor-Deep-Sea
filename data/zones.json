@@ -1,0 +1,2987 @@
+{
+ "sea_star": {
+  "name": "The Sea Star",
+  "depth": 1,
+  "mission": true,
+  "discover": [
+   "disc",
+   "disc"
+  ],
+  "dive": 4,
+  "arrive": [
+   "disc"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.2332,
+     0.3227
+    ],
+    "field": "yellow"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.7961,
+     0.4092
+    ],
+    "field": "brown"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.2124,
+     0.8608
+    ],
+    "disc": "1-2"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3557,
+     0.8608
+    ],
+    "disc": "1-2"
+   },
+   "s3": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4964,
+     0.8608
+    ],
+    "disc": "1-2"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.8176,
+     0.8043
+    ]
+   }
+  },
+  "links": [],
+  "id": "sea_star",
+  "name_it": "La Stella Marina",
+  "image": "res://assets/zones/sea_star.jpg"
+ },
+ "dying_reef": {
+  "name": "Dying Reef",
+  "depth": 1,
+  "discover": [
+   "rep",
+   "disc"
+  ],
+  "arrive": [
+   "impact"
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1596,
+     0.4139
+    ],
+    "cost": 1,
+    "r": [
+     "rep"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.4267,
+     0.4779
+    ],
+    "cost": 4,
+    "r": [
+     "rep",
+     "impact"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.1596,
+     0.8184
+    ],
+    "cost": 1,
+    "r": [
+     "coord"
+    ]
+   },
+   "c4": {
+    "t": "cons",
+    "pos": [
+     0.4775,
+     0.8514
+    ],
+    "cost": 0,
+    "r": [
+     "rep"
+    ]
+   },
+   "c5": {
+    "t": "cons",
+    "pos": [
+     0.7329,
+     0.8184
+    ],
+    "cost": 1,
+    "r": [
+     "impact"
+    ]
+   },
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.8339,
+     0.4252
+    ],
+    "field": "green"
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.2899,
+     0.444
+    ]
+   },
+   {
+    "a": "c1",
+    "b": "c3",
+    "r": [
+     "disc"
+    ],
+    "pos": [
+     0.1121,
+     0.6068
+    ]
+   },
+   {
+    "a": "c3",
+    "b": "c2",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.342,
+     0.6914
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c4",
+    "r": [
+     "disc"
+    ],
+    "pos": [
+     0.4834,
+     0.6585
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c5",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.6137,
+     0.5673
+    ]
+   }
+  ],
+  "id": "dying_reef",
+  "name_it": "Barriera Corallina Morente",
+  "image": "res://assets/zones/dying_reef.jpg"
+ },
+ "volcanic_island": {
+  "name": "Volcanic Island",
+  "depth": 1,
+  "discover": [
+   "insp",
+   "disc"
+  ],
+  "dive": 2,
+  "arrive": [
+   "ing"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.1805,
+     0.5268
+    ],
+    "field": "green"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.4743,
+     0.461
+    ],
+    "field": "brown"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3322,
+     0.8156
+    ],
+    "disc": "1-2"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4736,
+     0.8156
+    ],
+    "disc": "1-2"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.7179,
+     0.7977
+    ]
+   }
+  },
+  "links": [],
+  "id": "volcanic_island",
+  "name_it": "Isola Vulcanica",
+  "image": "res://assets/zones/volcanic_island.jpg"
+ },
+ "kelp_forest": {
+  "name": "Kelp Forest",
+  "depth": 1,
+  "discover": [
+   "rep",
+   "res"
+  ],
+  "dive": 4,
+  "arrive": [
+   "insp"
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1681,
+     0.4186
+    ],
+    "cost": 2,
+    "r": [
+     "rep",
+     "coord"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.3459,
+     0.6943
+    ],
+    "cost": 1,
+    "r": [
+     "coord"
+    ]
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.5772,
+     0.699
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.3094,
+     0.4901
+    ]
+   }
+  ],
+  "id": "kelp_forest",
+  "name_it": "Foresta di Kelp",
+  "image": "res://assets/zones/kelp_forest.jpg"
+ },
+ "remote_anchorage": {
+  "name": "Remote Anchorage",
+  "depth": 1,
+  "discover": [
+   "ing",
+   "disc"
+  ],
+  "arrive": [
+   "ing"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.1629,
+     0.6914
+    ],
+    "field": "blue"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4352,
+     0.7836
+    ],
+    "disc": "1-2"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.5765,
+     0.7836
+    ],
+    "disc": "2-3"
+   },
+   "s3": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.7166,
+     0.7836
+    ],
+    "r": [
+     "ing",
+     "res"
+    ]
+   },
+   "s4": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.8586,
+     0.7836
+    ],
+    "disc": "3+"
+   }
+  },
+  "links": [],
+  "id": "remote_anchorage",
+  "name_it": "Ancoraggio Remoto",
+  "image": "res://assets/zones/remote_anchorage.jpg"
+ },
+ "oil_rig": {
+  "name": "Decommissioned Oil Rig",
+  "depth": 1,
+  "discover": [
+   "coord",
+   "res"
+  ],
+  "arrive": [
+   "rep"
+  ],
+  "special": "oil_rig",
+  "warn_pos": [
+   0.1954,
+   0.381
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.129,
+     0.7789
+    ],
+    "cost": 1,
+    "r": [
+     "ing"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.4039,
+     0.8702
+    ],
+    "cost": 4,
+    "r": [
+     "rep",
+     "impact"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.7557,
+     0.8749
+    ],
+    "cost": 4,
+    "r": [
+     "coord",
+     "impact"
+    ]
+   },
+   "c4": {
+    "t": "cons",
+    "pos": [
+     0.886,
+     0.5945
+    ],
+    "cost": 1,
+    "r": [
+     "ing"
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.2515,
+     0.8749
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c3",
+    "r": [
+     "insp",
+     "insp"
+    ],
+    "pos": [
+     0.5818,
+     0.9078
+    ]
+   },
+   {
+    "a": "c3",
+    "b": "c4",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.8912,
+     0.7949
+    ]
+   }
+  ],
+  "id": "oil_rig",
+  "name_it": "Piattaforma Petrolifera Dismessa",
+  "image": "res://assets/zones/oil_rig.jpg"
+ },
+ "calm_seas": {
+  "name": "Calm Seas",
+  "depth": 1,
+  "discover": [
+   "ing",
+   "disc"
+  ],
+  "arrive": [
+   "res"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.813,
+     0.4779
+    ],
+    "field": "brown"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.2625,
+     0.6867
+    ],
+    "r": [
+     "insp",
+     "res"
+    ]
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4026,
+     0.6867
+    ],
+    "disc": "3+"
+   },
+   "t1": {
+    "t": "sonar",
+    "track": 1,
+    "pos": [
+     0.6697,
+     0.8354
+    ],
+    "disc": "1-2"
+   },
+   "t2": {
+    "t": "sonar",
+    "track": 1,
+    "pos": [
+     0.8111,
+     0.8354
+    ],
+    "disc": "1-2"
+   }
+  },
+  "links": [],
+  "id": "calm_seas",
+  "name_it": "Acque Tranquille",
+  "image": "res://assets/zones/calm_seas.jpg"
+ },
+ "atoll": {
+  "name": "Atoll",
+  "depth": 1,
+  "discover": [
+   "insp",
+   "disc"
+  ],
+  "dive": 4,
+  "arrive": [
+   "coord"
+  ],
+  "sites": {
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.1824,
+     0.7291
+    ]
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.5537,
+     0.7639
+    ],
+    "disc": "1-2"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.6958,
+     0.7639
+    ],
+    "disc": "1-2"
+   }
+  },
+  "links": [],
+  "id": "atoll",
+  "name_it": "Atollo",
+  "image": "res://assets/zones/atoll.jpg"
+ },
+ "looking_glass": {
+  "name": "The Looking Glass",
+  "depth": 2,
+  "mission": true,
+  "discover": [
+   "any",
+   "disc",
+   "res"
+  ],
+  "arrive": [
+   "insp"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.4743,
+     0.3904
+    ],
+    "field": "yellow"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.1446,
+     0.7178
+    ],
+    "field": "blue"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4788,
+     0.8401
+    ],
+    "disc": "1-3"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.6208,
+     0.8401
+    ],
+    "disc": "1-3"
+   },
+   "s3": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.7622,
+     0.8401
+    ],
+    "disc": "1-3"
+   },
+   "s4": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.9023,
+     0.8401
+    ],
+    "disc": "4"
+   }
+  },
+  "links": [],
+  "id": "looking_glass",
+  "name_it": "L'Osservatorio",
+  "image": "res://assets/zones/looking_glass.jpg"
+ },
+ "dolphin_pods": {
+  "name": "Dolphin Pods",
+  "depth": 2,
+  "discover": [
+   "insp",
+   "ing"
+  ],
+  "dive": 3,
+  "arrive": [
+   "insp"
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1564,
+     0.3857
+    ],
+    "cost": 4,
+    "r": [
+     "coord",
+     "impact"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.4332,
+     0.4468
+    ],
+    "cost": 2,
+    "r": [
+     "insp"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.7427,
+     0.4374
+    ],
+    "cost": 3,
+    "r": [
+     "impact",
+     "insp"
+    ]
+   },
+   "c4": {
+    "t": "cons",
+    "pos": [
+     0.3355,
+     0.8608
+    ],
+    "cost": 1,
+    "r": [
+     "insp"
+    ]
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.643,
+     0.7977
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.314,
+     0.461
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c3",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.5863,
+     0.4139
+    ]
+   },
+   {
+    "a": "c1",
+    "b": "c4",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.1596,
+     0.7808
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c4",
+    "r": [
+     "disc"
+    ],
+    "pos": [
+     0.4039,
+     0.6585
+    ]
+   }
+  ],
+  "id": "dolphin_pods",
+  "name_it": "Branchi di Delfini",
+  "image": "res://assets/zones/dolphin_pods.jpg"
+ },
+ "sunken_ruins": {
+  "name": "Sunken Ruins",
+  "depth": 2,
+  "discover": [
+   "ing",
+   "rep"
+  ],
+  "dive": 4,
+  "arrive": [
+   "disc"
+  ],
+  "special": "sunken_ruins",
+  "warn_pos": [
+   0.5081,
+   0.6068
+  ],
+  "sites": {
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.7023,
+     0.4111
+    ],
+    "disc": "2-3"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.8436,
+     0.4111
+    ],
+    "disc": "2-3"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.3616,
+     0.6256
+    ]
+   }
+  },
+  "links": [],
+  "id": "sunken_ruins",
+  "name_it": "Rovine Sommerse",
+  "image": "res://assets/zones/sunken_ruins.jpg"
+ },
+ "resupply_modules": {
+  "name": "Resupply Modules",
+  "depth": 2,
+  "discover": [
+   "coord",
+   "ing"
+  ],
+  "arrive": [
+   "disc"
+  ],
+  "sites": {
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.2248,
+     0.4092
+    ],
+    "disc": "1-3"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3668,
+     0.4092
+    ],
+    "disc": "1-3"
+   },
+   "s3": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.5081,
+     0.4092
+    ],
+    "r": [
+     "ing",
+     "ing"
+    ]
+   },
+   "t1": {
+    "t": "sonar",
+    "track": 1,
+    "pos": [
+     0.3844,
+     0.7131
+    ],
+    "disc": "3"
+   },
+   "t2": {
+    "t": "sonar",
+    "track": 1,
+    "pos": [
+     0.5244,
+     0.7131
+    ],
+    "disc": "3"
+   },
+   "t3": {
+    "t": "sonar",
+    "track": 1,
+    "pos": [
+     0.6645,
+     0.7131
+    ],
+    "disc": "3"
+   }
+  },
+  "links": [
+   {
+    "a": "s1",
+    "b": "t1",
+    "r": [
+     "disc"
+    ],
+    "pos": [
+     0.2997,
+     0.5644
+    ]
+   },
+   {
+    "a": "s2",
+    "b": "t2",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.4417,
+     0.5644
+    ]
+   },
+   {
+    "a": "s3",
+    "b": "t3",
+    "r": [
+     "disc"
+    ],
+    "pos": [
+     0.5818,
+     0.5644
+    ]
+   }
+  ],
+  "id": "resupply_modules",
+  "name_it": "Moduli di Rifornimento",
+  "image": "res://assets/zones/resupply_modules.jpg"
+ },
+ "cave_system": {
+  "name": "Submerged Cave System",
+  "depth": 2,
+  "discover": [
+   "coord",
+   "ing"
+  ],
+  "dive": 4,
+  "no_vessels": true,
+  "special": "cave_system",
+  "warn_pos": [
+   0.3896,
+   0.7168
+  ],
+  "sites": {
+   "d_up": {
+    "t": "dive",
+    "pos": [
+     0.7655,
+     0.1929
+    ],
+    "cave": "up",
+    "n": 2
+   },
+   "j_up": {
+    "t": "journal",
+    "pos": [
+     0.5049,
+     0.2399
+    ],
+    "field": "blue",
+    "cave": "up"
+   },
+   "d_left": {
+    "t": "dive",
+    "pos": [
+     0.1322,
+     0.4732
+    ],
+    "cave": "left",
+    "n": 1
+   },
+   "c_left": {
+    "t": "cons",
+    "pos": [
+     0.2345,
+     0.8184
+    ],
+    "cost": 2,
+    "r": [
+     "ing"
+    ],
+    "cave": "left"
+   },
+   "j_right": {
+    "t": "journal",
+    "pos": [
+     0.6612,
+     0.5456
+    ],
+    "field": "green",
+    "cave": "right"
+   },
+   "d_right": {
+    "t": "dive",
+    "pos": [
+     0.8664,
+     0.7639
+    ],
+    "cave": "right",
+    "n": 1
+   }
+  },
+  "links": [
+   {
+    "a": "c_left",
+    "b": "j_up",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.344,
+     0.4487
+    ]
+   },
+   {
+    "a": "j_up",
+    "b": "j_right",
+    "r": [
+     "ing"
+    ],
+    "pos": [
+     0.557,
+     0.4045
+    ]
+   },
+   {
+    "a": "c_left",
+    "b": "j_right",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.4495,
+     0.5786
+    ]
+   }
+  ],
+  "id": "cave_system",
+  "name_it": "Sistema di Grotte Sottomarine",
+  "image": "res://assets/zones/cave_system.jpg"
+ },
+ "shipwreck": {
+  "name": "Shipwreck",
+  "depth": 2,
+  "discover": [
+   "insp",
+   "ing"
+  ],
+  "dive": 8,
+  "arrive": [
+   "rep"
+  ],
+  "special": "shipwreck",
+  "sites": {
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.1857,
+     0.4139
+    ],
+    "r": [
+     "coord",
+     "res"
+    ]
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3277,
+     0.4111
+    ],
+    "disc": "3"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.6352,
+     0.7601
+    ]
+   }
+  },
+  "links": [],
+  "id": "shipwreck",
+  "name_it": "Relitto",
+  "image": "res://assets/zones/shipwreck.jpg"
+ },
+ "whale_calving": {
+  "name": "Whale Calving Grounds",
+  "depth": 2,
+  "discover": [
+   "rep",
+   "coord"
+  ],
+  "arrive": [
+   "res"
+  ],
+  "special": "whale_calving",
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1173,
+     0.3669
+    ],
+    "cost": 1,
+    "r": [
+     "impact"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.2899,
+     0.5786
+    ],
+    "cost": 2,
+    "r": [
+     "rep",
+     "rep"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.5081,
+     0.4516
+    ],
+    "cost": 4,
+    "r": [
+     "rep",
+     "impact"
+    ]
+   },
+   "c4": {
+    "t": "cons",
+    "pos": [
+     0.8958,
+     0.4704
+    ],
+    "cost": 2,
+    "r": [
+     "rep",
+     "coord"
+    ]
+   },
+   "c5": {
+    "t": "cons",
+    "pos": [
+     0.557,
+     0.8467
+    ],
+    "cost": 0,
+    "r": [
+     "rep"
+    ]
+   },
+   "c6": {
+    "t": "cons",
+    "pos": [
+     0.8013,
+     0.8702
+    ],
+    "cost": 2,
+    "r": [
+     "coord",
+     "insp"
+    ]
+   },
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.1238,
+     0.8278
+    ],
+    "field": "green",
+    "marked": true
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.1726,
+     0.4986
+    ]
+   },
+   {
+    "a": "c3",
+    "b": "c5",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.5016,
+     0.6115
+    ]
+   },
+   {
+    "a": "c4",
+    "b": "c6",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.8241,
+     0.6397
+    ]
+   }
+  ],
+  "id": "whale_calving",
+  "name_it": "Zone di Parto delle Balene",
+  "image": "res://assets/zones/whale_calving.jpg"
+ },
+ "ledge_elevator": {
+  "name": "Ledge Elevator",
+  "depth": 2,
+  "discover": [
+   "rep",
+   "coord"
+  ],
+  "dive": 3,
+  "arrive": [
+   "ing"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.2248,
+     0.3528
+    ],
+    "field": "yellow"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.1707,
+     0.7103
+    ],
+    "r": [
+     "ing",
+     "res"
+    ]
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3114,
+     0.7103
+    ],
+    "disc": "3"
+   },
+   "s3": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4528,
+     0.7103
+    ],
+    "disc": "3"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.8664,
+     0.7714
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "s2",
+    "b": "s3",
+    "r": [
+     "ing"
+    ],
+    "pos": [
+     0.3844,
+     0.8702
+    ]
+   }
+  ],
+  "id": "ledge_elevator",
+  "name_it": "Ascensore Subacqueo",
+  "image": "res://assets/zones/ledge_elevator.jpg"
+ },
+ "turtle_migration": {
+  "name": "Sea Turtle Migration",
+  "depth": 2,
+  "discover": [
+   "rep",
+   "insp"
+  ],
+  "arrive": [
+   "coord"
+  ],
+  "special": "turtle_migration",
+  "warn_pos": [
+   0.5264,
+   0.8984
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1792,
+     0.4892
+    ],
+    "cost": 2,
+    "r": [
+     "discover:1-3"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.5147,
+     0.6491
+    ],
+    "cost": 4,
+    "r": [
+     "coord",
+     "impact"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.8586,
+     0.7573
+    ],
+    "cost": 2,
+    "r": [
+     "discover:1-3"
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.3453,
+     0.4751
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c3",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.671,
+     0.7714
+    ]
+   }
+  ],
+  "id": "turtle_migration",
+  "name_it": "Migrazione delle Tartarughe Marine",
+  "image": "res://assets/zones/turtle_migration.jpg"
+ },
+ "jellyfish_bloom": {
+  "name": "Jellyfish Bloom",
+  "depth": 3,
+  "discover": [
+   "coord",
+   "coord"
+  ],
+  "arrive": [
+   "disc"
+  ],
+  "special": "jellyfish_bloom",
+  "warn_pos": [
+   0.6906,
+   0.4045
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.4788,
+     0.4233
+    ],
+    "cost": 5,
+    "r": [
+     "insp",
+     "insp",
+     "coord"
+    ],
+    "marked": true
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.2964,
+     0.7855
+    ],
+    "cost": 5,
+    "r": [
+     "rep",
+     "rep",
+     "coord"
+    ],
+    "marked": true
+   },
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.6319,
+     0.7996
+    ],
+    "field": "yellow",
+    "marked": true
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.3309,
+     0.5786
+    ]
+   },
+   {
+    "a": "c1",
+    "b": "j1",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.598,
+     0.5757
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "j1",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.4612,
+     0.8702
+    ]
+   }
+  ],
+  "id": "jellyfish_bloom",
+  "name_it": "Proliferazione di Meduse",
+  "image": "res://assets/zones/jellyfish_bloom.jpg"
+ },
+ "vortex": {
+  "name": "Vortex",
+  "depth": 3,
+  "discover": [
+   "ing",
+   "ing"
+  ],
+  "arrive": [
+   "rep"
+  ],
+  "special": "vortex",
+  "warn_pos": [
+   0.4332,
+   0.3198
+  ],
+  "sites": {
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.1941,
+     0.35
+    ],
+    "disc": "3",
+    "skip_depth": true
+   },
+   "t1": {
+    "t": "sonar",
+    "track": 1,
+    "pos": [
+     0.3062,
+     0.7667
+    ],
+    "r": [
+     "coord",
+     "res"
+    ]
+   },
+   "t2": {
+    "t": "sonar",
+    "track": 1,
+    "pos": [
+     0.4495,
+     0.7667
+    ],
+    "disc": "1-4"
+   },
+   "u1": {
+    "t": "sonar",
+    "track": 2,
+    "pos": [
+     0.6958,
+     0.8467
+    ],
+    "r": [
+     "insp",
+     "res"
+    ]
+   },
+   "u2": {
+    "t": "sonar",
+    "track": 2,
+    "pos": [
+     0.8391,
+     0.8467
+    ],
+    "disc": "4"
+   }
+  },
+  "links": [],
+  "id": "vortex",
+  "name_it": "Vortice",
+  "image": "res://assets/zones/vortex.jpg"
+ },
+ "thermal_vents": {
+  "name": "Thermal Vents",
+  "depth": 3,
+  "discover": [
+   "ing",
+   "ing"
+  ],
+  "dive": 4,
+  "arrive": [
+   "ing"
+  ],
+  "special": "thermal_vents",
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.1857,
+     0.7225
+    ],
+    "field": "green",
+    "marked": true
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.658,
+     0.746
+    ],
+    "field": "blue",
+    "marked": true
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.4267,
+     0.682
+    ]
+   }
+  },
+  "links": [],
+  "id": "thermal_vents",
+  "name_it": "Camini Termici",
+  "image": "res://assets/zones/thermal_vents.jpg"
+ },
+ "deepwater_shark": {
+  "name": "Deepwater Shark",
+  "depth": 3,
+  "discover": [
+   "insp",
+   "ing"
+  ],
+  "dive": 5,
+  "arrive": [
+   "coord"
+  ],
+  "special": "deepwater_shark",
+  "sites": {
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.6059,
+     0.7385
+    ]
+   }
+  },
+  "links": [],
+  "id": "deepwater_shark",
+  "name_it": "Squalo di Acque Profonde",
+  "image": "res://assets/zones/deepwater_shark.jpg"
+ },
+ "rift_valley": {
+  "name": "Rift Valley",
+  "depth": 3,
+  "discover": [
+   "coord",
+   "ing"
+  ],
+  "arrive": [
+   "coord"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.585,
+     0.428
+    ],
+    "field": "blue"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.1941,
+     0.715
+    ],
+    "disc": "2-3"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3336,
+     0.715
+    ],
+    "r": [
+     "rep",
+     "res"
+    ]
+   },
+   "s3": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4756,
+     0.715
+    ],
+    "disc": "3"
+   },
+   "s4": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.6156,
+     0.715
+    ],
+    "r": [
+     "ing",
+     "res"
+    ]
+   },
+   "s5": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.7577,
+     0.715
+    ],
+    "disc": "3"
+   }
+  },
+  "links": [
+   {
+    "a": "s2",
+    "b": "s4",
+    "r": [
+     "res"
+    ],
+    "pos": [
+     0.4658,
+     0.9031
+    ]
+   },
+   {
+    "a": "j1",
+    "b": "s5",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.7309,
+     0.5221
+    ]
+   }
+  ],
+  "id": "rift_valley",
+  "name_it": "Valle del Rift",
+  "image": "res://assets/zones/rift_valley.jpg"
+ },
+ "carbonate_spires": {
+  "name": "Carbonate Spires",
+  "depth": 3,
+  "mission": true,
+  "discover": [
+   "rep",
+   "rep"
+  ],
+  "arrive": [
+   "res"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.2723,
+     0.4939
+    ],
+    "field": "blue"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.5492,
+     0.3857
+    ],
+    "field": "brown"
+   },
+   "j3": {
+    "t": "journal",
+    "pos": [
+     0.8156,
+     0.4186
+    ],
+    "field": "green"
+   },
+   "j4": {
+    "t": "journal",
+    "pos": [
+     0.8013,
+     0.8561
+    ],
+    "field": "yellow"
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3909,
+     0.8514
+    ],
+    "disc": "3"
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.5309,
+     0.8514
+    ],
+    "disc": "3"
+   }
+  },
+  "links": [
+   {
+    "a": "j1",
+    "b": "j2",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.357,
+     0.3481
+    ]
+   },
+   {
+    "a": "j2",
+    "b": "j3",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.7121,
+     0.3246
+    ]
+   },
+   {
+    "a": "j3",
+    "b": "j4",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.8808,
+     0.6961
+    ]
+   },
+   {
+    "a": "j1",
+    "b": "s1",
+    "r": [
+     "res"
+    ],
+    "pos": [
+     0.355,
+     0.6115
+    ]
+   },
+   {
+    "a": "s2",
+    "b": "j4",
+    "r": [
+     "res"
+    ],
+    "pos": [
+     0.6775,
+     0.8843
+    ]
+   }
+  ],
+  "id": "carbonate_spires",
+  "name_it": "Guglie di Carbonato",
+  "image": "res://assets/zones/carbonate_spires.jpg"
+ },
+ "coldwater_reef": {
+  "name": "Coldwater Reef",
+  "depth": 3,
+  "discover": [
+   "insp",
+   "insp"
+  ],
+  "arrive": [
+   "rep"
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1205,
+     0.508
+    ],
+    "cost": 1,
+    "r": [
+     "rep"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.2137,
+     0.8561
+    ],
+    "cost": 2,
+    "r": [
+     "coord"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.5244,
+     0.8749
+    ],
+    "cost": 2,
+    "r": [
+     "insp"
+    ]
+   },
+   "c4": {
+    "t": "cons",
+    "pos": [
+     0.8502,
+     0.8325
+    ],
+    "cost": 1,
+    "r": [
+     "rep"
+    ]
+   },
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.4625,
+     0.4092
+    ],
+    "field": "yellow"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.6743,
+     0.4092
+    ],
+    "field": "green"
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "j1",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.2932,
+     0.3387
+    ]
+   },
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.114,
+     0.682
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c3",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.3681,
+     0.8843
+    ]
+   },
+   {
+    "a": "j1",
+    "b": "c3",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.3941,
+     0.6021
+    ]
+   },
+   {
+    "a": "j2",
+    "b": "c3",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.57,
+     0.6444
+    ]
+   },
+   {
+    "a": "j2",
+    "b": "c4",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.8111,
+     0.5927
+    ]
+   },
+   {
+    "a": "c3",
+    "b": "c4",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.6925,
+     0.8984
+    ]
+   }
+  ],
+  "id": "coldwater_reef",
+  "name_it": "Barriera di Acque Fredde",
+  "image": "res://assets/zones/coldwater_reef.jpg"
+ },
+ "bioluminescent": {
+  "name": "Bioluminescent Fauna",
+  "depth": 4,
+  "discover": [
+   "insp",
+   "insp",
+   "impact"
+  ],
+  "dive": 6,
+  "arrive": [
+   "ing"
+  ],
+  "special": "bioluminescent",
+  "sites": {
+   "d1": {
+    "t": "dive",
+    "pos": [
+     0.2215,
+     0.6162
+    ],
+    "n": 3,
+    "bonus": [
+     "res"
+    ]
+   },
+   "d2": {
+    "t": "dive",
+    "pos": [
+     0.7023,
+     0.5908
+    ],
+    "n": 3,
+    "bonus": [
+     "disc"
+    ]
+   }
+  },
+  "links": [],
+  "id": "bioluminescent",
+  "name_it": "Fauna Bioluminescente",
+  "image": "res://assets/zones/bioluminescent.jpg"
+ },
+ "continental_shelf": {
+  "name": "Continental Shelf",
+  "depth": 4,
+  "discover": [
+   "insp",
+   "ing",
+   "disc"
+  ],
+  "dive": 4,
+  "arrive": [
+   "coord"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.127,
+     0.7074
+    ],
+    "field": "brown"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.4691,
+     0.7714
+    ],
+    "field": "blue"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.8059,
+     0.7949
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "j1",
+    "b": "j2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.2866,
+     0.8608
+    ]
+   }
+  ],
+  "id": "continental_shelf",
+  "name_it": "Piattaforma Continentale",
+  "image": "res://assets/zones/continental_shelf.jpg"
+ },
+ "colossal_squid": {
+  "name": "Colossal Squid",
+  "depth": 4,
+  "discover": [
+   "rep",
+   "rep",
+   "res"
+  ],
+  "dive": 3,
+  "arrive": [
+   "coord"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.1844,
+     0.3763
+    ],
+    "field": "yellow"
+   },
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.6482,
+     0.4346
+    ],
+    "cost": 0,
+    "r": []
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.886,
+     0.7996
+    ],
+    "cost": 0,
+    "r": []
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.2489,
+     0.7761
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "impact",
+     "impact"
+    ],
+    "pos": [
+     0.8013,
+     0.5597
+    ]
+   }
+  ],
+  "id": "colossal_squid",
+  "name_it": "Calamaro Colossale",
+  "image": "res://assets/zones/colossal_squid.jpg"
+ },
+ "brine_pool": {
+  "name": "Brine Pool",
+  "depth": 4,
+  "discover": [
+   "insp",
+   "ing",
+   "res"
+  ],
+  "dive": 4,
+  "arrive": [
+   "insp"
+  ],
+  "special": "dive_impact",
+  "sites": {
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.4997,
+     0.5738
+    ]
+   }
+  },
+  "links": [],
+  "id": "brine_pool",
+  "name_it": "Piscina Salata",
+  "image": "res://assets/zones/brine_pool.jpg"
+ },
+ "sponge_gardens": {
+  "name": "Sponge Gardens",
+  "depth": 4,
+  "discover": [
+   "rep",
+   "ing",
+   "res"
+  ],
+  "arrive": [
+   "res",
+   "res"
+  ],
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.1629,
+     0.4563
+    ],
+    "field": "brown"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.4235,
+     0.5475
+    ],
+    "field": "green"
+   },
+   "j3": {
+    "t": "journal",
+    "pos": [
+     0.8339,
+     0.4299
+    ],
+    "field": "blue"
+   }
+  },
+  "links": [
+   {
+    "a": "j1",
+    "b": "j2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.2769,
+     0.5851
+    ]
+   },
+   {
+    "a": "j2",
+    "b": "j3",
+    "r": [
+     "disc",
+     "res"
+    ],
+    "pos": [
+     0.6254,
+     0.3575
+    ]
+   }
+  ],
+  "id": "sponge_gardens",
+  "name_it": "Giardini di Spugne",
+  "image": "res://assets/zones/sponge_gardens.jpg"
+ },
+ "seamount": {
+  "name": "Seamount",
+  "depth": 4,
+  "discover": [
+   "ing",
+   "disc",
+   "res"
+  ],
+  "dive": 4,
+  "arrive": [
+   "disc"
+  ],
+  "special": "seamount",
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1401,
+     0.4986
+    ],
+    "cost": 1,
+    "r": [
+     "coord"
+    ],
+    "marked": true
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.3876,
+     0.4516
+    ],
+    "cost": 3,
+    "r": [
+     "coord",
+     "coord"
+    ],
+    "marked": true
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.3616,
+     0.8278
+    ],
+    "cost": 1,
+    "r": [
+     "coord"
+    ],
+    "marked": true
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.7818,
+     0.5475
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.2723,
+     0.5673
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c3",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.4039,
+     0.6331
+    ]
+   }
+  ],
+  "id": "seamount",
+  "name_it": "Montagna Sottomarina",
+  "image": "res://assets/zones/seamount.jpg"
+ },
+ "whale_fall": {
+  "name": "Whale Fall",
+  "depth": 5,
+  "discover": [
+   "insp",
+   "coord",
+   "coord"
+  ],
+  "arrive": [
+   "insp"
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.116,
+     0.5597
+    ],
+    "cost": 2,
+    "r": [
+     "coord",
+     "impact"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.4853,
+     0.5409
+    ],
+    "cost": 4,
+    "r": [
+     "impact",
+     "impact"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.9023,
+     0.461
+    ],
+    "cost": 2,
+    "r": [
+     "insp",
+     "impact"
+    ]
+   },
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.2866,
+     0.3904
+    ],
+    "field": "yellow"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.7414,
+     0.6491
+    ],
+    "field": "brown"
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "j1",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.1596,
+     0.3622
+    ]
+   },
+   {
+    "a": "j1",
+    "b": "c2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.3518,
+     0.5691
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "j2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.6254,
+     0.588
+    ]
+   },
+   {
+    "a": "j2",
+    "b": "c3",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.8945,
+     0.6331
+    ]
+   }
+  ],
+  "id": "whale_fall",
+  "name_it": "Carcassa di Balena",
+  "image": "res://assets/zones/whale_fall.jpg"
+ },
+ "abyssal_plain": {
+  "name": "Abyssal Plain",
+  "depth": 5,
+  "discover": [
+   "insp",
+   "ing",
+   "disc"
+  ],
+  "arrive": [
+   "any"
+  ],
+  "special": "abyssal_plain",
+  "sites": {
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.1954,
+     0.7977
+    ],
+    "disc": "5",
+    "skip_depth": true
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3368,
+     0.7977
+    ],
+    "disc": "5",
+    "skip_depth": true
+   }
+  },
+  "links": [],
+  "id": "abyssal_plain",
+  "name_it": "Piana Abissale",
+  "image": "res://assets/zones/abyssal_plain.jpg"
+ },
+ "scaly_snails": {
+  "name": "Scaly-Foot Snails",
+  "depth": 5,
+  "discover": [
+   "coord",
+   "ing",
+   "ing"
+  ],
+  "dive": 3,
+  "arrive": [
+   "disc"
+  ],
+  "special": "scaly_snails",
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.1922,
+     0.4817
+    ],
+    "field": "blue"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.6534,
+     0.6896
+    ],
+    "field": "yellow"
+   },
+   "j3": {
+    "t": "journal",
+    "pos": [
+     0.8013,
+     0.5155
+    ],
+    "field": "brown"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.4287,
+     0.7319
+    ]
+   }
+  },
+  "links": [],
+  "id": "scaly_snails",
+  "name_it": "Lumache di Metallo",
+  "image": "res://assets/zones/scaly_snails.jpg"
+ },
+ "fallen_star": {
+  "name": "Fallen Star",
+  "depth": 5,
+  "mission": true,
+  "discover": [
+   "rep",
+   "ing",
+   "impact"
+  ],
+  "dive": 4,
+  "arrive": [
+   "res",
+   "res"
+  ],
+  "special": "dive_impact",
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.101,
+     0.3763
+    ],
+    "cost": 6,
+    "r": [
+     "rep",
+     "impact",
+     "impact"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.1238,
+     0.7667
+    ],
+    "cost": 6,
+    "r": [
+     "coord",
+     "impact",
+     "impact"
+    ]
+   },
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.2736,
+     0.4516
+    ],
+    "field": "green",
+    "bonus": [
+     "impact"
+    ]
+   },
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.7557,
+     0.3838
+    ],
+    "r": [
+     "insp",
+     "impact"
+    ]
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.8977,
+     0.3838
+    ],
+    "r": [
+     "insp",
+     "impact"
+    ]
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.8795,
+     0.6896
+    ],
+    "field": "brown",
+    "bonus": [
+     "impact"
+    ]
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.5472,
+     0.5757
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "j1",
+    "r": [
+     "rep"
+    ],
+    "pos": [
+     0.2248,
+     0.2935
+    ]
+   },
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "insp"
+    ],
+    "pos": [
+     0.0684,
+     0.555
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "j1",
+    "r": [
+     "coord"
+    ],
+    "pos": [
+     0.1857,
+     0.5691
+    ]
+   },
+   {
+    "a": "s2",
+    "b": "j2",
+    "r": [
+     "disc"
+    ],
+    "pos": [
+     0.9023,
+     0.5315
+    ]
+   }
+  ],
+  "id": "fallen_star",
+  "name_it": "Stella Cadente",
+  "image": "res://assets/zones/fallen_star.jpg"
+ },
+ "abyssal_trench": {
+  "name": "Abyssal Trench",
+  "depth": 5,
+  "discover": [
+   "insp",
+   "coord",
+   "ing"
+  ],
+  "arrive": [
+   "sonar_here"
+  ],
+  "special": "abyssal_trench",
+  "warn_pos": [
+   0.8143,
+   0.08
+  ],
+  "sites": {
+   "s1": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.1941,
+     0.4158
+    ],
+    "r": [
+     "insp",
+     "res"
+    ]
+   },
+   "s2": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.3355,
+     0.4158
+    ],
+    "r": [
+     "rep",
+     "res"
+    ]
+   },
+   "s3": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.4756,
+     0.4158
+    ],
+    "r": [
+     "insp",
+     "impact"
+    ]
+   },
+   "s4": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.6169,
+     0.4158
+    ],
+    "r": [
+     "rep",
+     "impact"
+    ]
+   },
+   "s5": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.759,
+     0.4158
+    ],
+    "r": [
+     "impact",
+     "impact"
+    ]
+   },
+   "s6": {
+    "t": "sonar",
+    "track": 0,
+    "pos": [
+     0.9003,
+     0.4158
+    ],
+    "r": [
+     "impact",
+     "impact",
+     "impact"
+    ]
+   }
+  },
+  "links": [],
+  "id": "abyssal_trench",
+  "name_it": "Fossa Abissale",
+  "image": "res://assets/zones/abyssal_trench.jpg"
+ },
+ "black_smoker": {
+  "name": "Black Smoker",
+  "depth": 5,
+  "discover": [
+   "rep",
+   "ing",
+   "ing"
+  ],
+  "dive": 4,
+  "arrive": [
+   "disc",
+   "res"
+  ],
+  "special": "black_smoker",
+  "sites": {
+   "j1": {
+    "t": "journal",
+    "pos": [
+     0.699,
+     0.4092
+    ],
+    "field": "brown"
+   },
+   "j2": {
+    "t": "journal",
+    "pos": [
+     0.8384,
+     0.7244
+    ],
+    "field": "blue"
+   },
+   "d": {
+    "t": "dive",
+    "pos": [
+     0.202,
+     0.5503
+    ]
+   }
+  },
+  "links": [],
+  "id": "black_smoker",
+  "name_it": "Bocche Idrotermali",
+  "image": "res://assets/zones/black_smoker.jpg"
+ },
+ "seafloor_restoration": {
+  "name": "Seafloor Restoration",
+  "depth": 5,
+  "discover": [
+   "rep",
+   "coord",
+   "res"
+  ],
+  "arrive": [
+   "cons_here"
+  ],
+  "sites": {
+   "c1": {
+    "t": "cons",
+    "pos": [
+     0.1336,
+     0.5644
+    ],
+    "cost": 1,
+    "r": [
+     "coord"
+    ]
+   },
+   "c2": {
+    "t": "cons",
+    "pos": [
+     0.4788,
+     0.5033
+    ],
+    "cost": 5,
+    "r": [
+     "promote"
+    ]
+   },
+   "c3": {
+    "t": "cons",
+    "pos": [
+     0.8404,
+     0.555
+    ],
+    "cost": 1,
+    "r": [
+     "rep"
+    ]
+   },
+   "c4": {
+    "t": "cons",
+    "pos": [
+     0.2248,
+     0.8608
+    ],
+    "cost": 1,
+    "r": [
+     "rep"
+    ]
+   },
+   "c5": {
+    "t": "cons",
+    "pos": [
+     0.5114,
+     0.8608
+    ],
+    "cost": 2,
+    "r": [
+     "impact"
+    ]
+   },
+   "c6": {
+    "t": "cons",
+    "pos": [
+     0.7915,
+     0.8608
+    ],
+    "cost": 1,
+    "r": [
+     "coord"
+    ]
+   }
+  },
+  "links": [
+   {
+    "a": "c1",
+    "b": "c2",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.3192,
+     0.5033
+    ]
+   },
+   {
+    "a": "c2",
+    "b": "c3",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.6645,
+     0.4845
+    ]
+   },
+   {
+    "a": "c1",
+    "b": "c4",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.1075,
+     0.7291
+    ]
+   },
+   {
+    "a": "c4",
+    "b": "c5",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.3713,
+     0.8937
+    ]
+   },
+   {
+    "a": "c5",
+    "b": "c6",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.6534,
+     0.8373
+    ]
+   },
+   {
+    "a": "c3",
+    "b": "c6",
+    "r": [
+     "impact"
+    ],
+    "pos": [
+     0.8958,
+     0.7197
+    ]
+   }
+  ],
+  "id": "seafloor_restoration",
+  "name_it": "Ripristino del Fondale",
+  "image": "res://assets/zones/seafloor_restoration.jpg"
+ }
+}
