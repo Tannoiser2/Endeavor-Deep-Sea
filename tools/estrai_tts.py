@@ -307,8 +307,12 @@ def main():
     json.dump({"players": players, "mat": MAT, "rules": RULES}, open(os.path.join(DATA, "rules.json"), "w"),
               indent=1, ensure_ascii=False)
     # Fogli missione in italiano (scansioni), allineati ai fogli del mod: sostituiscono gli inglesi.
-    ita = os.path.join(os.path.dirname(os.path.abspath(MODS)), "Missioni Italiano.pdf")
-    if os.path.exists(ita):
+    # Si usa il PDF "…Italiano….pdf" più recente accanto alla cartella Mods.
+    base = os.path.dirname(os.path.abspath(MODS))
+    pdfs = [os.path.join(base, f) for f in os.listdir(base) if f.lower().endswith(".pdf") and "italiano" in f.lower()]
+    ita = max(pdfs, key=os.path.getmtime) if pdfs else ""
+    if ita:
+        print("scansioni italiane:", os.path.basename(ita))
         import subprocess
         subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "allinea_missioni.py"),
                         ita, MODS, PROJ], check=False)
