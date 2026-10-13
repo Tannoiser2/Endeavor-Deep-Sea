@@ -4,6 +4,7 @@ extends Control
 ## (niente menu a tendina né caselle di spunta): chi gioca e come, missione, seme.
 
 signal start_requested(specs: Array, seed_value: int, opts: Dictionary)
+signal online_start_requested(specs: Array, seed_value: int, opts: Dictionary, session: OnlineSession)
 
 const COLORS := ["purple", "yellow", "red", "white"]
 const DEFAULT_NAMES := ["Viola", "Giallo", "Rosso", "Bianco"]
@@ -14,6 +15,9 @@ var _mission: ButtonGroup
 var _mission_info: Label
 var _go: Button
 var _warn: Label
+## Collegamento a Firebase (lo tiene main, resta vivo fra menu e partita) e stanza in preparazione.
+var net: Net
+var lobby: Dictionary = {}           # {role, code, seat}; condiviso con main per tornare al menu
 
 
 func _ready() -> void:
@@ -131,8 +135,18 @@ func _ready() -> void:
 	gold(_go)
 	_go.add_theme_font_size_override("font_size", 22)
 	box.add_child(_go)
+	var on_btn := Button.new()
+	on_btn.text = "Gioca online"
+	on_btn.tooltip_text = "Con gli amici, ognuno dal suo dispositivo: crea una stanza e condividi il codice"
+	on_btn.custom_minimum_size = Vector2(0, 40)
+	gold(on_btn)
+	on_btn.add_theme_font_size_override("font_size", 18)
+	on_btn.pressed.connect(_online_panel)
+	box.add_child(on_btn)
 	_refresh_rows()
 	_refresh_mission()
+	if not lobby.is_empty():
+		_online_panel.call_deferred()
 
 
 ## Pulsante d'azione dorato (usato anche a fine partita).
@@ -246,12 +260,261 @@ func _refresh_mission() -> void:
 	_mission_info.text = "%s (%s)\n%s%s" % [m["name"], m["name_en"], "\n".join(goals), ("\n⚠ " + String(m["rule"])) if m.has("rule") else ""]
 
 
-func _on_start() -> void:
+func _specs() -> Array:
 	var specs := []
 	for i in _active():
 		var t := int(_val(_rows[i].group))
 		var nm: String = _rows[i].name.text.strip_edges()
 		specs.append({"name": nm if nm != "" else DEFAULT_NAMES[i], "ai": t > 0, "ai_level": t, "color": COLORS[i]})
+	return specs
+
+
+func _on_start() -> void:
 	var opts := {"mission": int(_val(_mission))}
 	var sv := int(_seed.text) if _seed.text.is_valid_int() else -1
-	start_requested.emit(specs, sv, opts)
+	start_requested.emit(_specs(), sv, opts)
+
+
+# ───────────────────────── online ─────────────────────────
+
+var _on_panel: Control
+var _on_name: LineEdit
+var _on_code: LineEdit
+var _on_lbl: Label
+var _on_startb: Button
+
+
+func _online_panel() -> void:
+	if is_instance_valid(_on_panel):
+		_on_panel.queue_free()
+	_on_panel = Control.new()
+	_on_panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_on_panel.mouse_filter = Control.MOUSE_FILTER_STOP
+	add_child(_on_panel)
+	var shade := ColorRect.new()
+	shade.color = Color(0, 0, 0, 0.75)
+	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_on_panel.add_child(shade)
+	var center := CenterContainer.new()
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_on_panel.add_child(center)
+	var panel := PanelContainer.new()
+	var psb := StyleBoxFlat.new()
+	psb.bg_color = Color(0.04, 0.09, 0.13, 0.97)
+	psb.border_color = Color("#b08a4a")
+	psb.set_border_width_all(2)
+	psb.set_corner_radius_all(10)
+	psb.set_content_margin_all(24)
+	panel.add_theme_stylebox_override("panel", psb)
+	center.add_child(panel)
+	var vb := VBoxContainer.new()
+	vb.add_theme_constant_override("separation", 12)
+	vb.custom_minimum_size = Vector2(620, 0)
+	panel.add_child(vb)
+	var title := Label.new()
+	title.text = "Gioca online"
+	title.add_theme_font_size_override("font_size", 32)
+	vb.add_child(title)
+	var info := Label.new()
+	info.text = "Chi crea la stanza sceglie prima nel menu missione, colori e livello dell'IA: i colori su Umano diventano i posti per gli amici (il primo è il suo). Gli amici entrano con il codice. I posti rimasti liberi li gioca l'IA."
+	info.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	info.modulate = Color(1, 1, 1, 0.8)
+	vb.add_child(info)
+	var ses: Dictionary = net.load_session()
+	_on_name = LineEdit.new()
+	_on_name.placeholder_text = "Il tuo nome"
+	_on_name.max_length = 20
+	_on_name.text = str(ses.get("name", ""))
+	vb.add_child(_on_name)
+	var b_create := Button.new()
+	b_create.text = "Crea una stanza"
+	b_create.custom_minimum_size = Vector2(0, 44)
+	gold(b_create)
+	b_create.pressed.connect(_online_create)
+	vb.add_child(b_create)
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override("separation", 10)
+	_on_code = LineEdit.new()
+	_on_code.placeholder_text = "Codice"
+	_on_code.max_length = 4
+	_on_code.custom_minimum_size = Vector2(160, 0)
+	_on_code.text_changed.connect(func(tx):
+		_on_code.text = tx.to_upper()
+		_on_code.caret_column = tx.length())
+	row.add_child(_on_code)
+	var b_join := Button.new()
+	b_join.text = "Entra"
+	b_join.custom_minimum_size = Vector2(140, 40)
+	gold(b_join)
+	b_join.pressed.connect(_online_join)
+	row.add_child(b_join)
+	vb.add_child(row)
+	_on_lbl = Label.new()
+	_on_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_on_lbl.custom_minimum_size = Vector2(600, 90)
+	vb.add_child(_on_lbl)
+	var row2 := HBoxContainer.new()
+	row2.add_theme_constant_override("separation", 10)
+	_on_startb = Button.new()
+	_on_startb.text = "Inizia online"
+	_on_startb.custom_minimum_size = Vector2(240, 44)
+	gold(_on_startb)
+	_on_startb.pressed.connect(_online_begin_host)
+	_on_startb.visible = lobby.get("role", "") == "host"
+	row2.add_child(_on_startb)
+	var b_close := Button.new()
+	b_close.text = "Indietro"
+	b_close.custom_minimum_size = Vector2(160, 44)
+	gold(b_close)
+	b_close.pressed.connect(func(): _on_panel.queue_free())
+	row2.add_child(b_close)
+	vb.add_child(row2)
+	if not lobby.is_empty():
+		_on_code.text = lobby["code"]
+		_say("Stanza %s…" % lobby["code"])
+		_lobby_poll(lobby["code"])
+	elif str(ses.get("room", "")) != "":
+		_on_code.text = str(ses["room"])
+		_say("Eri nella stanza %s: premi Entra per rientrare." % ses["room"])
+
+
+func _say(tx: String) -> void:
+	if is_instance_valid(_on_lbl):
+		_on_lbl.text = tx
+
+
+func _seats_text(room: Dictionary) -> String:
+	var seats := Net._as_dict(room.get("seats", {}))
+	var specs := _specs()
+	var parts := []
+	for idx in room.get("open", []):
+		var k := str(int(idx))
+		var who := str(seats[k].get("name", "?")) if seats.has(k) and seats[k] is Dictionary else "libero"
+		var col: String = DEFAULT_NAMES[COLORS.find(specs[int(idx)]["color"])] if int(idx) < specs.size() else "posto %d" % (int(idx) + 1)
+		parts.append("%s: %s" % [col, who])
+	return ", ".join(parts)
+
+
+func _online_create() -> void:
+	var nm := _on_name.text.strip_edges()
+	if nm == "":
+		_say("Scrivi il tuo nome.")
+		return
+	var specs := _specs()
+	var seats := []
+	for i in specs.size():
+		if not specs[i]["ai"]:
+			seats.append(i)
+	if specs.size() < 2 or seats.size() < 2:
+		_say("Metti su Umano almeno due colori: il primo è il tuo, gli altri sono i posti per gli amici.")
+		return
+	_say("Creo la stanza…")
+	var code := await net.create_room(nm, seats)
+	if code == "":
+		_say("Non riesco a creare la stanza.\n%s" % net.last_error)
+		return
+	lobby.clear()
+	lobby.merge({"role": "host", "code": code, "seat": seats[0]})
+	net.remember_room(code, seats[0])
+	net._save({"name": nm})
+	if is_instance_valid(_on_code):
+		_on_code.text = code
+	if is_instance_valid(_on_startb):
+		_on_startb.visible = true
+	_lobby_poll(code)
+
+
+func _online_join() -> void:
+	var code := _on_code.text.strip_edges().to_upper()
+	var nm := _on_name.text.strip_edges()
+	if nm == "" or code.length() != 4:
+		_say("Scrivi il tuo nome e il codice di 4 lettere.")
+		return
+	_say("Entro nella stanza %s…" % code)
+	var seat := await net.join_room(code, nm)
+	if seat == -2:
+		_say("Stanza %s non trovata, oppure la partita è già iniziata.%s" % [code, ("\n" + net.last_error) if net.last_error != "" else ""])
+		return
+	if seat == -1:
+		_say("Nella stanza %s non ci sono posti liberi." % code)
+		return
+	var room: Dictionary = net.last_room
+	lobby.clear()
+	lobby.merge({"role": "host" if room.get("host", "") == net.uid else "guest", "code": code, "seat": seat})
+	net.remember_room(code, seat)
+	net._save({"name": nm})
+	if room.get("status", "") in ["playing", "over"] and room.has("game"):
+		_say("Rientro nella partita della stanza %s…" % code)
+		_online_begin(room["game"], true)
+		return
+	if is_instance_valid(_on_startb):
+		_on_startb.visible = lobby["role"] == "host"
+	_lobby_poll(code)
+
+
+func _lobby_poll(code: String) -> void:
+	while is_inside_tree() and lobby.get("code", "") == code:
+		var room := await net.room(code)
+		if not is_inside_tree() or lobby.get("code", "") != code:
+			return
+		if room.is_empty():
+			_say("La stanza %s non esiste più." % code)
+			lobby.clear()
+			return
+		if lobby["role"] == "host":
+			_say("Stanza [ %s ]: dai il codice ai tuoi amici.\nPosti: %s.\nQuando ci siete tutti premi Inizia online: i posti liberi li gioca l'IA." % [code, _seats_text(room)])
+		else:
+			if room.get("status", "") == "playing" and room.has("game"):
+				_online_begin(room["game"], false)
+				return
+			_say("Sei nella stanza [ %s ].\nPosti: %s.\nAspetta che chi l'ha creata avvii la partita." % [code, _seats_text(room)])
+		await get_tree().create_timer(2.0).timeout
+
+
+## Chi ha creato la stanza avvia: missione, colori e seme valgono per tutti.
+func _online_begin_host() -> void:
+	var code: String = lobby["code"]
+	var room := await net.room(code)
+	if room.is_empty():
+		_say("La stanza %s non esiste più." % code)
+		lobby.clear()
+		return
+	var seats_db := Net._as_dict(room.get("seats", {}))
+	var specs := _specs()
+	var my_seat := int(lobby["seat"])
+	if my_seat >= specs.size() or not seats_db.has(str(my_seat)) or specs[my_seat]["ai"]:
+		_say("Hai cambiato i colori dopo aver creato la stanza: creane una nuova.")
+		return
+	for i in specs.size():
+		var k := str(i)
+		if specs[i]["ai"]:
+			continue
+		if seats_db.has(k) and seats_db[k] is Dictionary:
+			specs[i]["name"] = str(seats_db[k].get("name", specs[i]["name"]))
+		else:
+			specs[i]["ai"] = true
+			specs[i]["ai_level"] = 2
+			specs[i]["name"] = specs[i]["name"] + " (IA)"
+	var cfg := {"specs": specs, "seed": 1 + randi() % 2000000000, "opts": {"mission": int(_val(_mission))}}
+	var g := {"cfg": var_to_str(cfg)}
+	if not await net.start_room(code, g):
+		_say("Non riesco ad avviare la partita (%s)." % net.last_error)
+		return
+	_online_begin(g, false)
+
+
+## Avvio (o rientro) della partita online.
+func _online_begin(g: Dictionary, rejoin: bool) -> void:
+	var lob: Dictionary = lobby.duplicate()
+	var backlog: Array = []
+	if rejoin:
+		backlog = await net.get_acts(lob["code"])
+		net.set_away(lob["code"], int(lob["seat"]), false)
+	var cfg = str_to_var(str(g.get("cfg", "")))
+	if not (cfg is Dictionary) or not cfg.has("specs"):
+		_say("Configurazione della partita non valida.")
+		return
+	var ses := OnlineSession.new()
+	ses.setup(net, lob["code"], int(lob["seat"]), lob["role"], backlog)
+	lobby.clear()
+	online_start_requested.emit(cfg["specs"], int(cfg["seed"]), cfg["opts"], ses)

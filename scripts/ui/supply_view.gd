@@ -13,6 +13,8 @@ const CARD := Vector2(744, 1039)
 var state: Dictionary = {}
 var tex_fn: Callable
 var highlights: Dictionary = {}
+var show_specs := true             # griglia degli Specialisti (scheda Reclutamento)
+var show_journals := true          # vetrina dei Diari
 var _hits: Array = []
 var _font: Font
 
@@ -46,11 +48,17 @@ func _draw() -> void:
 	# proporzioni: 5 colonne di tessere (3 tasche impilate in orizzontale per riga) + 5 Giornali
 	var h := size.y - 26.0
 	var th := h / 3.0 - 4.0
+	if not show_journals:
+		th = minf(th, ((size.x - 12.0) / 5.0 - 14.0) * TILE.y / TILE.x)
 	var tw := th * TILE.x / TILE.y
-	var tier_w := tw + 8.0
+	var tier_w := tw + (14.0 if not show_journals else 8.0)
 	var x := 6.0
+	if not show_journals:
+		x = maxf(6.0, (size.x - 5.0 * tier_w) / 2.0)
 	for tier in range(1, 6):
-		_text(Vector2(x + tw / 2, 14), "Livello %d" % tier, 13, Color(1, 1, 1, 0.75))
+		if not show_specs:
+			break
+		_text(Vector2(x + tw / 2, 16), "Livello %d" % tier, 13 if show_journals else 16, Color(1, 1, 1, 0.75))
 		var ids := []
 		if tier < 5:
 			for sid in GameData.spec_order:
@@ -81,15 +89,29 @@ func _draw() -> void:
 				GameData.acts_text(sd["j"]["acts"])]
 			_hits.append([r, key, tip, t])
 		x += tier_w
-	# Giornali
-	x += 14.0
-	var cw := minf((size.x - x - 8) / 5.0 - 6.0, h * CARD.x / CARD.y)
+	if not show_journals:
+		return
+	# Giornali: accanto agli Specialisti su due file (tre carte sopra, la quarta e il mazzo sotto);
+	# da soli in una fila
+	var per_row := 3
+	var rows := 2.0
+	if show_specs:
+		x += 14.0
+	else:
+		x = 6.0
+		per_row = 5
+		rows = 1.0
+	var cw := minf((size.x - x - 8) / per_row - 6.0, ((h - 6.0 * (rows - 1.0)) / rows) * CARD.x / CARD.y)
+	if not show_specs:
+		x = maxf(6.0, (size.x - per_row * (cw + 6.0)) / 2.0)
 	var ch := cw * CARD.y / CARD.x
-	_text(Vector2(x + (cw + 6) * 2.5, 14), "Diari", 13, Color(1, 1, 1, 0.75))
+	_text(Vector2(x + (cw + 6) * per_row / 2.0, 14), "Diari", 13, Color(1, 1, 1, 0.75))
+	var slot_rect := func(i: int) -> Rect2:
+		return Rect2(Vector2(x + (i % per_row) * (cw + 6), 24 + (i / per_row) * (ch + 6)), Vector2(cw, ch))
 	for i in state.display.size():
 		var jid: String = state.display[i]
 		var jd: Dictionary = GameData.journals[jid]
-		var r := Rect2(Vector2(x + i * (cw + 6), 24), Vector2(cw, ch))
+		var r: Rect2 = slot_rect.call(i)
 		var t := _tex(jd["image"])
 		if t:
 			draw_texture_rect(t, r, false)
@@ -106,7 +128,7 @@ func _draw() -> void:
 		if not jd["slots"].is_empty():
 			tip += "\nAzione: " + " / ".join(jd["slots"].map(func(a): return GameData.ACTION_NAMES.get(a, a)))
 		_hits.append([r, key, tip, t])
-	var dr := Rect2(Vector2(x + 4 * (cw + 6), 24), Vector2(cw, ch))
+	var dr: Rect2 = slot_rect.call(maxi(4, state.display.size()))
 	var bt := _tex("res://assets/journals/back.jpg")
 	if bt and not state.jdeck.is_empty():
 		draw_texture_rect(bt, dr, false)

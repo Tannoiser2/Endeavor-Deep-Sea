@@ -14,14 +14,22 @@ Apri la cartella con Godot 4.7 e premi Play. Al primo avvio Godot importa le imm
 - A fine partita: classifica con il dettaglio dei punti e tre pulsanti, **Guarda il tabellone**
   (chiude la classifica; **Punteggi finali** la riapre), **Rivincita** e **Menu iniziale**.
 
+## Schermo di gioco
+- **A sinistra, l'area grande a schede**: **Oceano** (le tessere originali nella griglia della
+  missione, dischi sui siti, Navi, pile di token Immersione e, a destra, le pile coperte per
+  profondità), **Reclutamento** (la griglia degli Specialisti, livelli 1–5) e **Missione** (il
+  foglio con il tabellone Impatto). La scheda giusta si apre da sola: Reclutamento a inizio round,
+  Missione quando si piazza un Impatto, poi si torna all'Oceano; in mezzo si possono guardare le
+  altre liberamente. Sotto c'è sempre la vetrina dei **Diari**.
+- **A destra, in cima**: il messaggio con cosa fare e i pulsanti di scelta (Passa, Salta, Annulla…).
+- Sotto: la **plancia** del giocatore (cubetti su Reputazione, Ispirazione, Coordinazione, Ingegno e
+  Ricerca, dischi nell'area di preparazione, token Immersione nello stemma, Navi non ancora in mare,
+  punti) e la sua **squadra** in carte grandi: Specialisti col disco sul cerchio e Diari pubblicati.
+- Poi un **riquadro per ogni giocatore** (punti, attributi, Ricerca, dischi, Navi, squadra): clic su
+  un riquadro = la sua plancia al posto di quella grande; clic sul giocatore di turno per tornare.
+- In fondo **Registro** e **Regole** (i chiarimenti in italiano).
+
 ## Come si gioca (tutto a clic)
-- **Oceano** (a sinistra): le tessere originali nella griglia della missione (colonne A–E,
-  profondità 1–5), dischi dei giocatori sui siti, Navi nel riquadro di Viaggio, pile di token
-  Immersione; a destra le pile coperte delle tessere per profondità.
-- **Plancia** (a destra, del giocatore di turno): la plancia originale con i cubetti su
-  Reputazione, Ispirazione, Coordinazione, Ingegno e Ricerca, i dischi nell'area di preparazione,
-  il token Immersione nello stemma, le Navi non ancora in mare e i punti attuali; sotto, la
-  squadra: Specialisti col disco sul cerchio di attivazione e Giornali pubblicati.
 - **Attivazione**: clic su uno Specialista = il disco va "in mano" sul suo cerchio e si illuminano
   i bersagli; clic sul bersaglio nell'oceano = l'azione parte (Viaggio: la zona di arrivo, e la
   Nave se ne hai più d'una che può andarci; Sonar/Immersione/Conservazione: il sito; Giornale: il
@@ -31,13 +39,42 @@ Apri la cartella con Godot 4.7 e premi Play. Al primo avvio Godot importa le imm
   il token si converte in Ricerca cliccando poi la fascia della Ricerca.
 - **Scoperta**: si pesca dalle pile illuminate, le due tessere compaiono in grande sopra l'oceano;
   clic sulla tessera scelta e poi sullo spazio libero tratteggiato.
-- **Reclutamento**: clic sullo Specialista nella plancia in basso (livelli 1–5).
+- **Reclutamento**: clic sullo Specialista nella scheda Reclutamento (livelli 1–5).
   **Riassegnazione**: clic sugli Specialisti da cui riprendere i dischi.
-- **Impatto**: si apre la scheda Missione con gli esagoni possibili illuminati.
+- **Impatto**: si apre da sola la scheda Missione con gli esagoni possibili illuminati.
 - **Scelte obbligate automatiche**: un'unica mossa possibile parte da sola; la Riassegnazione è
   automatica se la Coordinazione basta per tutti; la Ricerca mancante si paga da sola coi token.
 - Tasto destro su tessere, carte e token per ingrandirli; rotellina e trascinamento col tasto
   destro per lo zoom dell'oceano; doppio clic per tornare alla vista intera.
+
+## Gioco online
+Dal menu, **Gioca online** (anche dalla versione web). Usa lo stesso progetto Firebase degli altri giochi
+(Realtime Database, piano gratuito), con le stanze sotto `endeavordeepsea/rooms`.
+
+- **Chi crea la stanza** sceglie prima nel menu missione, colori e livello dell'IA: i colori su
+  **Umano** diventano i posti per gli amici (il primo è il suo). Scrive il nome, preme *Crea una
+  stanza* e comunica il codice di 4 lettere. Quando ci sono tutti preme *Inizia online*: i posti
+  rimasti liberi li gioca l'IA.
+- **Gli amici** scrivono il nome e il codice e premono *Entra*.
+- Ogni decisione con più di una scelta possibile è una mossa numerata nel database (`acts/0`,
+  `acts/1`, …) che contiene solo quale delle mosse possibili è stata scelta, più un controllo.
+  Tutti i dispositivi fanno girare lo stesso motore con lo stesso seme e applicano le stesse mosse,
+  quindi la partita è identica ovunque; le scelte obbligate le applicano tutti da soli. Se due
+  dispositivi non fossero più allineati il gioco lo segnala. I colori IA li gioca il dispositivo
+  di chi ha creato la stanza.
+- **Se cade la linea** si rientra con lo stesso codice e *Entra*: la partita riprende da dove era.
+  Se un giocatore tace per un minuto, al suo posto gioca l'IA finché non rientra.
+
+**Configurazione Firebase.** Le regole sono in `firebase/database.rules.json`: comprendono quelle di
+tutti gli altri giochi (Ultimo chilometro, Snow Tails, STATUS, World Order, Kingsburg, Churchill,
+Burning Banners, BEAST, Mage Knight) più la nuova sezione `endeavordeepsea`. Vanno pubblicate nella
+console di Firebase (Realtime Database → Regole) al posto delle precedenti; senza questo passaggio
+la creazione della stanza risponde "Permission denied".
+
+**Prove senza Firebase.** `tests/firebase_mock.py` è un finto Firebase locale. Con `EDS_DB_URL`,
+`EDS_AUTH_URL` e `EDS_REFRESH_URL` che puntano lì, `tests/online_play.gd` fa giocare una partita intera a
+due istanze (`EDS_ROLE=host` e `guest`, più un colore IA; con `EDS_PHASE=drop` e poi `back` l'ospite
+esce a metà e rientra). Alla fine ognuna stampa l'impronta della partita, che deve coincidere.
 
 ## Regole implementate
 Preparazione (Reclutamento, Impegno, Riassegnazione), Attivazione con Specialisti, token e
@@ -81,6 +118,8 @@ scripts/ai/            IA a simulazione con pesi in AIPlayer.W: valuta ogni moss
                        sotto-decisioni (Scoperta, Promozione...), le combinazioni Specialisti × occasioni vicine ×
                        Ricerca per i round futuri; l'esperta gioca le mosse migliori fino a fine round
 scripts/ui/            menu, oceano, plancia, Specialisti/Giornali, foglio Missione
+scripts/net/           Firebase (REST) e partita online in lockstep
+firebase/              regole del Realtime Database (tutti i giochi)
 tests/                 sim.gd (IA contro IA), fuzz.gd (mosse casuali), rules_test.gd, ui_smoke.gd (partita a clic con screenshot)
 tools/                 estrattore dal mod TTS e trascrizioni
 ```

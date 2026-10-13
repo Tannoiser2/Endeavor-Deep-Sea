@@ -2,7 +2,7 @@
   "titolo": "Endeavor: Deep Sea",
   "sottotitolo": "esplorazione degli abissi",
   "descrizione": "Spedizioni sottomarine, ricerca e conservazione degli oceani.",
-  "online": false,
+  "online": true,
   "sezione": "conversione",
   "ordine": 50
 }

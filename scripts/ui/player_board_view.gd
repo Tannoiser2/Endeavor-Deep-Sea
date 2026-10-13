@@ -22,6 +22,7 @@ var highlights: Dictionary = {}
 var pending := ""                  # chiave "presa" (disco in mano sopra lo Specialista)
 var interactive := false
 var show_team := true
+var team_only := false             # solo la squadra (Specialisti e Diari), in pixel, su più file
 var _hits: Array = []
 var _font: Font
 var anims: Array = []
@@ -41,7 +42,7 @@ func set_data(s: Dictionary, player: int, loader: Callable) -> void:
 	var snap := {}
 	for i in s.players[p].specs.size():
 		snap[i] = s.players[p].specs[i].disc
-	if same:
+	if same and not team_only and show_team:
 		for i in snap:
 			if snap[i] and not _snap.get(i, false):
 				anims.append({"from": _staging_slot(0), "to": _circle(i), "t": 0.0})
@@ -73,16 +74,40 @@ func _process(delta: float) -> void:
 # ───────── geometria ─────────
 
 func _canvas() -> Vector2:
+	if team_only:
+		return size
 	return Vector2(MAT.x, MAT.y + (TEAM_H if show_team else 0.0))
 
 
 func _k() -> float:
+	if team_only:
+		return 1.0
 	var c := _canvas()
 	return minf(size.x / c.x, size.y / c.y)
 
 
 func _o() -> Vector2:
+	if team_only:
+		return Vector2.ZERO
 	return Vector2((size.x - _canvas().x * _k()) / 2.0, 0)
+
+
+## Squadra da sola: quante carte per fila per averle il più grandi possibile.
+func _team_grid() -> Vector2:
+	var pl: Dictionary = state.players[p]
+	var n: int = maxi(1, pl.specs.size() + pl.journals.size())
+	var best := Vector2(1, 10.0)
+	for rows in range(1, n + 1):
+		var cols := ceili(float(n) / rows)
+		var w := minf(size.x / cols - 8.0, (size.y / rows - 8.0) * 531.0 / 709.0)
+		if w > best.y:
+			best = Vector2(cols, w)
+	return best
+
+
+## Fattore per dischi e bordi delle carte della squadra.
+func _kt() -> float:
+	return _item_w() / 330.0 if team_only else _k()
 
 
 func P(v: Vector2) -> Vector2:
@@ -96,6 +121,8 @@ func R(r: Rect2) -> Rect2:
 func _item_w() -> float:
 	if state.is_empty():
 		return 330.0
+	if team_only:
+		return _team_grid().y
 	var pl: Dictionary = state.players[p]
 	var n: int = pl.specs.size() + pl.journals.size()
 	var tw := 330.0
@@ -106,12 +133,21 @@ func _item_w() -> float:
 
 func _spec_rect(i: int) -> Rect2:
 	var w := _item_w()
+	if team_only:
+		var cols := int(_team_grid().x)
+		var h := w * 709.0 / 531.0
+		var x0 := (size.x - cols * (w + 8.0) + 8.0) / 2.0
+		return Rect2(Vector2(x0 + (i % cols) * (w + 8.0), 4 + (i / cols) * (h + 8.0)), Vector2(w, h))
 	return Rect2(Vector2(10 + i * (w + 10), MAT.y + 30), Vector2(w, w * 709.0 / 531.0))
 
 
 func _journal_rect(ji: int) -> Rect2:
 	var pl: Dictionary = state.players[p]
 	var w := _item_w()
+	if team_only:
+		var r := _spec_rect(pl.specs.size() + ji)
+		var jw := minf(r.size.x, r.size.y * 744.0 / 1039.0)
+		return Rect2(r.position + Vector2((r.size.x - jw) / 2.0, 0), Vector2(jw, jw * 1039.0 / 744.0))
 	var base := _spec_rect(pl.specs.size() - 1).end.x + 30
 	var jw := w * 0.92
 	return Rect2(Vector2(base + ji * (jw + 10), MAT.y + 30), Vector2(jw, jw * 1039.0 / 744.0))
@@ -141,6 +177,9 @@ func _draw() -> void:
 		return
 	var k := _k()
 	var pl: Dictionary = state.players[p]
+	if team_only:
+		_draw_team(pl)
+		return
 	var col: Color = Color(pl.hex)
 	var mt := _tex(GameData.players[pl.color]["mat"])
 	if mt:
@@ -199,8 +238,12 @@ func _draw() -> void:
 	# Punti attuali
 	var sc: int = Rules.score(state, p)["total"]
 	_text(P(Vector2(1290, 1690)), "Punti %d" % sc, 64 * k, Color("#f3d27a"))
-	if not show_team:
-		return
+	if show_team:
+		_draw_team(pl)
+
+
+func _draw_team(pl: Dictionary) -> void:
+	var kt := _kt()
 	# squadra: Specialisti
 	for i in pl.specs.size():
 		var e: Dictionary = pl.specs[i]
@@ -212,11 +255,11 @@ func _draw() -> void:
 		var key := "spec:%d" % i
 		var ckey := "copy:%d" % i
 		if highlights.has(key) or highlights.has(ckey) or pending == key:
-			draw_rect(R(r).grow(-2), Color.WHITE if pending == key else Color(1, 0.9, 0.2), false, maxf(2.0, 10 * k))
+			draw_rect(R(r).grow(-2), Color.WHITE if pending == key else Color(1, 0.9, 0.2), false, maxf(2.0, 10 * kt))
 		if e.disc and not _animating_to(_circle(i)):
-			_disc(P(_circle(i)), 52.0 * k, pl.color)
+			_disc(P(_circle(i)), 52.0 * kt, pl.color)
 		if pending == key:
-			_disc(P(_circle(i)) + Vector2(0, -14 * k), 56.0 * k, pl.color, true)
+			_disc(P(_circle(i)) + Vector2(0, -14 * kt), 56.0 * kt, pl.color, true)
 		var sd: Dictionary = GameData.side(e.id, e.senior) if e.id != "leader" else GameData.leader
 		var tip := "%s%s\nAzioni: %s" % [sd["name"], "" if e.id == "leader" else (" (Senior)" if e.senior else " (Junior)"),
 			GameData.acts_text(sd.get("acts", {}))]
@@ -238,10 +281,10 @@ func _draw() -> void:
 			var fx := 0.61 if slots.size() == 1 or s_i == 1 else 0.29
 			var c := r.position + Vector2(r.size.x * fx, r.size.y * 0.87)
 			if je.used[s_i]:
-				_disc(P(c), 48.0 * k, pl.color)
+				_disc(P(c), 48.0 * kt, pl.color)
 		var key := "jslot:%d" % ji
 		if highlights.has(key) or pending == key:
-			draw_rect(R(r).grow(-2), Color.WHITE if pending == key else Color(1, 0.9, 0.2), false, maxf(2.0, 10 * k))
+			draw_rect(R(r).grow(-2), Color.WHITE if pending == key else Color(1, 0.9, 0.2), false, maxf(2.0, 10 * kt))
 		var tip := "«%s» — campi: %s" % [jd["en"], ", ".join(jd["fields"].map(func(f): return GameData.FIELD_NAMES[f]))]
 		if int(jd["points"]) > 0:
 			tip += "\n%d punti a fine partita" % int(jd["points"])
@@ -251,7 +294,7 @@ func _draw() -> void:
 	for a in anims:
 		var e := 1.0 - pow(1.0 - clampf(a.t, 0.0, 1.0), 3.0)
 		var pos: Vector2 = a.from.lerp(a.to, e) + Vector2(0, -sin(e * PI) * 160.0)
-		_disc(P(pos), 56.0 * k, pl.color, true)
+		_disc(P(pos), 56.0 * kt, pl.color, true)
 
 
 func _animating_to(target: Vector2) -> bool:
